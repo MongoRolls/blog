@@ -2,7 +2,6 @@
 句芒的个人博客
 </h2><br>
 
-
 <pre align="center">
  Build with 🦖<a href="https://docusaurus.io/">Docusaurus</a> 
 </pre>
@@ -11,16 +10,14 @@
 <br>
 <a href="https://kuizuo.cn">🖥 Online Preview</a>
 <br><br> 
-<a href="https://vercel.com/new/clone?repository-url=https://github.com/kuizuo/blog/tree/main&project-name=blog&repo-name=blog" rel="nofollow"><img src="https://vercel.com/button"></a>
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/kuizuo/blog" rel="nofollow"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
+<a href="https://vercel.com/new/clone?repository-url=https://github.com/mongoRolls/blog/tree/main&project-name=blog&repo-name=blog" rel="nofollow"><img src="https://vercel.com/button"></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/mongoRolls/blog" rel="nofollow"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
 <a href="https://stackblitz.com/github/kuizuo/blog" rel="nofollow"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"></a>
 </p>
 
 ## 👋 Introduction
 
-
-
-如果你想要搭建一个类似的站点，可直接 [Fork](https://github.com/kuizuo/blog/fork) 本仓库使用，或者通过 [StackBlitz](https://stackblitz.com/github/kuizuo/blog) 在线运行本项目，或通过 [Vercel](https://vercel.com/new/clone?repository-url=https://github.com/kuizuo/blog/tree/main&project-name=blog&repo-name=blog) 一键部署。
+如果你想要搭建一个类似的站点，可直接 [Fork](https://github.com/mongoRolls/blog/fork) 本仓库使用，或者通过 [StackBlitz](https://stackblitz.com/github/kuizuo/blog) 在线运行本项目，或通过 [Vercel](https://vercel.com/new/clone?repository-url=https://github.com/mongoRolls/blog/tree/main&project-name=blog&repo-name=blog) 一键部署。
 
 ## ✨ Features
 
@@ -67,7 +64,7 @@
 ## 📥 Start
 
 ```bash
-git clone https://github.com/kuizuo/blog.git
+git clone https://github.com/mongoRolls/blog.git
 cd blog
 pnpm install
 pnpm start

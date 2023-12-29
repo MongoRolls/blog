@@ -12,7 +12,6 @@ keywords: [github, action]
 
 [GitHub Marketplace · Actions to improve your workflow](https://github.com/marketplace?type=actions)
 
-
 ## 测试 输出
 
 [Environment variables - GitHub Docs](https://docs.github.com/cn/actions/learn-github-actions/environment-variables)
@@ -215,14 +214,14 @@ SSH_PRIVATE_KEY 是 SSH 密钥，可通过 `ssh-keygen` （生成位置/root/.ss
 ## ftp 文件传输
 
 ```yaml
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ${{ secrets.ftp_server }}
-          username: ${{ secrets.ftp_user }}
-          password: ${{ secrets.ftp_pwd }}
-          local-dir: ./build/
-          server-dir: ./
+- name: FTP Deploy
+  uses: SamKirkland/FTP-Deploy-Action@4.0.0
+  with:
+    server: ${{ secrets.ftp_server }}
+    username: ${{ secrets.ftp_user }}
+    password: ${{ secrets.ftp_pwd }}
+    local-dir: ./build/
+    server-dir: ./
 ```
 
 ## 发布 release / npm 包
@@ -292,5 +291,5 @@ https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.
 示例：
 
 ```
-https://github.com/kuizuo/github-action-example/actions/workflows/ci.yml/badge.svg
+https://github.com/mongoRolls/github-action-example/actions/workflows/ci.yml/badge.svg
 ```

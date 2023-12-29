@@ -20,7 +20,7 @@ const DESCRIPTION = translate({
   message: '学而无用，不如学而用之。这里是我在技术领域中努力实践和应用的最佳证明。',
 })
 
-// const GITHUB_URL = 'https://github.com/kuizuo'
+// const GITHUB_URL = 'https://github.com/mongoRolls'
 
 type ProjectState = {
   scrollTopPosition: number
@@ -79,7 +79,7 @@ function ShowcaseCards() {
             return (
               <div key={key}>
                 <div className={clsx('margin-bottom--md', styles.showcaseFavoriteHeader)}>
-                  <h3>{_.upperFirst(lang === 'en' ? key: projectTypeMap[key])}</h3>
+                  <h3>{_.upperFirst(lang === 'en' ? key : projectTypeMap[key])}</h3>
                 </div>
                 <ul className={styles.showcaseList}>
                   {value.map(project => (

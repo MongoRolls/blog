@@ -137,7 +137,7 @@ GraphQL 提供了 [变更(Mutations)](https://graphql.cn/learn/queries/#mutation
 
 模块：[nestjs/graphql](https://github.com/nestjs/graphql 'nestjs/graphql')
 
-仓库本文实例代码仓库： [kuizuo/nest-graphql-demo](https://github.com/kuizuo/nest-graphql-demo 'kuizuo/nest-graphql-demo')
+仓库本文实例代码仓库： [kuizuo/nest-graphql-demo](https://github.com/mongoRolls/nest-graphql-demo 'kuizuo/nest-graphql-demo')
 
 **创建项目**
 
@@ -455,7 +455,7 @@ Query 就不在演示。
 
 Strapi 官方提供 [GraphQL 插件](https://market.strapi.io/plugins/@strapi-plugin-graphql 'GraphQL插件') 免去了配置的繁琐。更具体的配置参见 [GraphQL - Strapi Developer Documentation](https://docs.strapi.io/developer-docs/latest/development/plugins/graphql.html 'GraphQL - Strapi Developer Documentation')
 
-这里我就选用 [kuizuo/vitesse-nuxt-strapi](https://github.com/kuizuo/vitesse-nuxt-strapi 'kuizuo/vitesse-nuxt-strapi') 作为演示，并为其提供 graphQL 支持。
+这里我就选用 [kuizuo/vitesse-nuxt-strapi](https://github.com/mongoRolls/vitesse-nuxt-strapi 'kuizuo/vitesse-nuxt-strapi') 作为演示，并为其提供 graphQL 支持。
 
 strapi 安装
 

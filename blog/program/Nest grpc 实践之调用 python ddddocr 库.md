@@ -8,7 +8,7 @@ keywords: [nest, grpc, python, ddddocr]
 description: 本文将使用 nest 通过 grpc 的方式来调用 python 的 ddddocr 库来识别验证码。
 ---
 
-我曾经写过一个项目 [ddddocr_server](https://github.com/kuizuo/ddddocr_server)，使用 fastapi 提供 http 接口，以此来调用 [ddddocr](https://github.com/sml2h3/ddddocr) 库。
+我曾经写过一个项目 [ddddocr_server](https://github.com/mongoRolls/ddddocr_server)，使用 fastapi 提供 http 接口，以此来调用 [ddddocr](https://github.com/sml2h3/ddddocr) 库。
 
 其他语言想要调用的话，则是通过 http 协议的方式来调用。然而 http 协议的开销不小，而 Websocket 调用又不灵活，此时针对这种应用场景的最佳选择就是 rpc（Remote Procedure Call 远程过程调用），而这次所要用的技术便是 grpc。
 
@@ -20,7 +20,7 @@ description: 本文将使用 nest 通过 grpc 的方式来调用 python 的 dddd
 
 ![Untitled](https://img.kuizuo.cn/202307290823586.png)
 
-本文源码 [nest-ocr](https://github.com/kuizuo/nest-ocr)
+本文源码 [nest-ocr](https://github.com/mongoRolls/nest-ocr)
 
 ## 简单熟悉下 grpc
 
@@ -306,7 +306,7 @@ if __name__ == '__main__':
     serve()
 ```
 
-此时整个代码的核心流程就已经搞通了，你可以到 [nest-ocr](https://github.com/kuizuo/nest-ocr) 查看源码，先看看用 postman grpc 方式调用，这里 image 为 字节数组（图片的二进制数据）
+此时整个代码的核心流程就已经搞通了，你可以到 [nest-ocr](https://github.com/mongoRolls/nest-ocr) 查看源码，先看看用 postman grpc 方式调用，这里 image 为 字节数组（图片的二进制数据）
 
 ![Untitled](https://img.kuizuo.cn/202307290823596.png)
 

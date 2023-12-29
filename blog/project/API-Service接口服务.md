@@ -14,7 +14,7 @@ sticky: 2
 
 在线地址: [API-Service](https://api.kuizuo.cn)
 
-开源地址: [kuizuo/api-service](https://github.com/kuizuo/api-service)
+开源地址: [kuizuo/api-service](https://github.com/mongoRolls/api-service)
 
 <!-- truncate -->
 

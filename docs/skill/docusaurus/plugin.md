@@ -19,7 +19,7 @@ plugins: [
       path: 'blog',
       routeBasePath: '/',
       editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-        `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
+        `https://github.com/mongoRolls/blog/edit/main/${blogDirPath}/${blogPath}`,
       editLocalizedFiles: false,
       blogSidebarCount: 10,
       postsPerPage: 10,

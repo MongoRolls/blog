@@ -65,12 +65,12 @@ export default config
 
 ```typescript title='docusaurus.config.ts' icon='logos:docusaurus'
 socials: {
-  github: 'https://github.com/kuizuo',
-  twitter: 'https://twitter.com/kuizuo',
-  juejin: 'https://juejin.cn/user/1565318510545901',
+  github: 'https://github.com/mongoRolls',
+  twitter: 'https://twitter.com/MongoRolls',
+  juejin: 'https://juejin.cn/user/2377593299678135',
   csdn: 'https://blog.csdn.net/kuizuo12',
-  qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=911993023&amp;site=qq',
-  cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
+  qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=1467513807&amp;site=qq',
+  cloudmusic: 'https://music.163.com/#/artist?id=1007170',
 }
 ```
 

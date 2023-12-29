@@ -9,7 +9,7 @@ keywords: [javascript, ast, reverse, project]
 
 基于 Babel 对 JS 代码进行混淆与还原操作的网站 [JS 代码混淆与还原 (kuizuo.cn)](http://deobfuscator.kuizuo.cn/)
 
-![js-de-obfuscator](https://github.com/kuizuo/js-deobfuscator/blob/main/images/1.png)
+![js-de-obfuscator](https://github.com/mongoRolls/js-deobfuscator/blob/main/images/1.png)
 
 <!-- truncate -->
 
@@ -35,7 +35,7 @@ AST 能做为逆向分析的利器，可以将还原出来的代码替换原来�
 
 接下来我将要演示一个混淆代码是如何还原的，这个例子是我第一次接触混淆的例子，也可以说是我玩的最溜的一次还原了，反正折腾了也有 4,5 来次。
 
-贴上代码 git 地址 [js-de-obfuscator/example/deobfuscator/cx](https://github.com/kuizuo/js-de-obfuscator/blob/main/example/deobfuscator/cx/code.js)
+贴上代码 git 地址 [js-de-obfuscator/example/deobfuscator/cx](https://github.com/mongoRolls/js-de-obfuscator/blob/main/example/deobfuscator/cx/code.js)
 
 > 注：该 js 文件是通过工具[JavaScript Obfuscator Tool](https://www.obfuscator.io/)进行混淆处理的。
 
@@ -247,11 +247,7 @@ var _0x505b30 = (function () {
 
         if (0 === _0xb2c58f[_0x3028('0x3', '2Q@E')]) return _0x1efd4e
 
-        for (
-          _0x46992c = 0;
-          _0x46992c < _0xb2c58f[_0x3028('0x4', '[YLR')];
-          _0x46992c++
-        )
+        for (_0x46992c = 0; _0x46992c < _0xb2c58f[_0x3028('0x4', '[YLR')]; _0x46992c++)
           (_0x1efd4e =
             (_0x1efd4e << (_0x5cae2b ? 5 : 16)) -
             _0x1efd4e +
@@ -273,10 +269,7 @@ var _0x505b30 = (function () {
               } else {
                 if (_0x35fd15) {
                   if (_0x3028('0x13', 'r8Qx') !== _0x3028('0x14', 'YLF%')) {
-                    var _0x1fa1e3 = _0x35fd15[_0x3028('0x15', 'sLdn')](
-                      _0x3d32a2,
-                      arguments,
-                    )
+                    var _0x1fa1e3 = _0x35fd15[_0x3028('0x15', 'sLdn')](_0x3d32a2, arguments)
 
                     _0x35fd15 = null
                     return _0x1fa1e3
@@ -296,9 +289,7 @@ var _0x505b30 = (function () {
     ;(function () {
       return ![]
     })
-      [_0x3028('0x16', 'Yp5j')](
-        _0x3028('0x17', ']R4I') + _0x3028('0x18', 'M10H'),
-      )
+      [_0x3028('0x16', 'Yp5j')](_0x3028('0x17', ']R4I') + _0x3028('0x18', 'M10H'))
       [_0x3028('0x19', '%#u0')]('stateObject')
   }
 })()
@@ -319,9 +310,7 @@ var _0x505b30 = (function () {
 
         for (_0x46992c = 0; _0x46992c < _0xb2c58f['length']; _0x46992c++)
           (_0x1efd4e =
-            (_0x1efd4e << (_0x5cae2b ? 5 : 16)) -
-            _0x1efd4e +
-            _0xb2c58f['charCodeAt'](_0x46992c)),
+            (_0x1efd4e << (_0x5cae2b ? 5 : 16)) - _0x1efd4e + _0xb2c58f['charCodeAt'](_0x46992c)),
             (_0x1efd4e = _0x5cae2b ? _0x1efd4e : ~_0x1efd4e)
 
         return 2147483647 & _0x1efd4e
@@ -733,11 +722,7 @@ hexUnicodeToString() {
 不过还有一些可以特定的替换，比如 for i
 
 ```javascript
-for (
-  var _0x1e5665 = 0, _0x3620b9 = this['JIyEgF']['length'];
-  _0x1e5665 < _0x3620b9;
-  _0x1e5665++
-) {
+for (var _0x1e5665 = 0, _0x3620b9 = this['JIyEgF']['length']; _0x1e5665 < _0x3620b9; _0x1e5665++) {
   this['JIyEgF']['push'](Math['round'](Math['random']()))
   _0x3620b9 = this['JIyEgF']['length']
 }
@@ -756,7 +741,7 @@ for (
 
 等等，总之你想咋优化都完全可以优化，但还原完的代码就不一定能看懂了。与解密字符串那个相比，如果搞不定字符串解密，那这些都是徒劳。
 
-具体的实例可通过 [源码例子](https://github.com/kuizuo/js-de-obfuscator/tree/main/example/deobfuscator) 中查看对 AST 的操作。
+具体的实例可通过 [源码例子](https://github.com/mongoRolls/js-de-obfuscator/tree/main/example/deobfuscator) 中查看对 AST 的操作。
 
 ## 运行还原后的代码
 

@@ -93,11 +93,11 @@ const config: Config = {
           title: '社交媒体',
           items: [
             { label: '关于我', to: '/about' },
-            { label: 'GitHub', href: 'https://github.com/kuizuo' },
-            { label: 'Twitter', href: 'https://twitter.com/kuizuo' },
+            { label: 'GitHub', href: 'https://github.com/mongoRolls' },
+            { label: 'Twitter', href: 'https://twitter.com/MongoRolls' },
             {
               label: '掘金',
-              href: 'https://juejin.cn/user/1565318510545901',
+              href: 'https://juejin.cn/user/2377593299678135',
             },
             { label: 'Discord', href: 'https://discord.gg/M8cVcjDxkz' },
           ],
@@ -166,14 +166,14 @@ const config: Config = {
       darkTheme: 'dark_dimmed',
     } satisfies Partial<GiscusConfig>,
     socials: {
-      github: 'https://github.com/kuizuo',
-      twitter: 'https://twitter.com/kuizuo',
-      juejin: 'https://juejin.cn/user/1565318510545901',
+      github: 'https://github.com/mongoRolls',
+      twitter: 'https://twitter.com/MongoRolls',
+      juejin: 'https://juejin.cn/user/2377593299678135',
       csdn: 'https://blog.csdn.net/kuizuo12',
-      qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=911993023&amp;site=qq',
-      zhihu: 'https://www.zhihu.com/people/kuizuo',
-      cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
-      email: 'mailto:hi@kuizuo.cn',
+      qq: 'https://wpa.qq.com/msgrd?v=3&amp;uin=1467513807&amp;site=qq',
+      zhihu: 'https://www.zhihu.com/people/MongoRolls',
+      cloudmusic: 'https://music.163.com/#/artist?id=1007170',
+      email: 'mailto:xuzhichao1618@qq.com',
     } satisfies Social,
     tableOfContents: {
       minHeadingLevel: 2,
@@ -221,7 +221,7 @@ const config: Config = {
       {
         path: 'blog',
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-          `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
+          `https://github.com/mongoRolls/blog/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogDescription: '代码人生：编织技术与生活的博客之旅',
         blogSidebarCount: 10,

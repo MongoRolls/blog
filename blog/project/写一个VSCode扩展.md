@@ -15,7 +15,7 @@ image: /img/project/vscode-extension.png
 
 扩展地址：[VSCode-extension](https://marketplace.visualstudio.com/items?itemName=kuizuo.vscode-extension-sample 'VSCode-extension')
 
-开源地址：[kuizuo/vscode-extension (github.com)](https://github.com/kuizuo/vscode-extension)
+开源地址：[kuizuo/vscode-extension (github.com)](https://github.com/mongoRolls/vscode-extension)
 
 <!-- truncate -->
 

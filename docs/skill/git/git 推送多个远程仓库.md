@@ -22,7 +22,7 @@ git remote set-url --add origin 远程仓库地址
 
 ```bash {4}
 [remote "origin"]
-    url = https://github.com/kuizuo/blog.git
+    url = https://github.com/mongoRolls/blog.git
     fetch = +refs/heads/*:refs/remotes/origin/*
     url = https://git.kuizuo.cn/kuizuo/blog.git
 ```
