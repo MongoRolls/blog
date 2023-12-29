@@ -15,7 +15,7 @@ authors: kuizuo
 const config: Config = {
   title: '句芒的小站',
   titleDelimiter: '-',
-  url: 'https://kuizuo.cn',
+  url: 'https://mongorolls.cn',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'kuizuo',

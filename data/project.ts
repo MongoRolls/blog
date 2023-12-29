@@ -3,7 +3,7 @@ export const projects: Project[] = [
     title: '句芒的小站',
     description: '🦖 基于 Docusaurus 静态网站生成器实现个人博客',
     preview: '/img/project/blog.png',
-    website: 'https://kuizuo.cn',
+    website: 'https://mongorolls.cn',
     source: 'https://github.com/mongoRolls/blog',
     tags: ['opensource', 'design', 'favorite'],
     type: 'web',

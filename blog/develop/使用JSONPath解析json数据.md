@@ -106,18 +106,18 @@ let names = cities.map(c => c.name)
 }
 ```
 
-| JsonPath | Result |
-| --- | --- |
-| `$.store.book[*].author` | 所有 book 的 author 节点 |
-| `$..author` | 所有 author 节点 |
-| `$.store.*` | store 下的所有节点，book 数组和 bicycle 节点 |
-| `$.store..price` | store 下的所有 price 节点 |
-| `$..book[2]` | 匹配第 3 个 book 节点 |
-| `$..book[(@.length-1)]`，或 `$..book[-1:]` | 匹配倒数第 1 个 book 节点 |
-| `$..book[0,1]`，或 `$..book[:2]` | 匹配前两个 book 节点 |
-| `$..book[?(@.isbn)]` | 过滤含 isbn 字段的节点 |
-| `$..book[?(@.price<10)]` | 过滤`price<10`的节点 |
-| `$..*` | 递归匹配所有子节点 |
+| JsonPath                                   | Result                                       |
+| ------------------------------------------ | -------------------------------------------- |
+| `$.store.book[*].author`                   | 所有 book 的 author 节点                     |
+| `$..author`                                | 所有 author 节点                             |
+| `$.store.*`                                | store 下的所有节点，book 数组和 bicycle 节点 |
+| `$.store..price`                           | store 下的所有 price 节点                    |
+| `$..book[2]`                               | 匹配第 3 个 book 节点                        |
+| `$..book[(@.length-1)]`，或 `$..book[-1:]` | 匹配倒数第 1 个 book 节点                    |
+| `$..book[0,1]`，或 `$..book[:2]`           | 匹配前两个 book 节点                         |
+| `$..book[?(@.isbn)]`                       | 过滤含 isbn 字段的节点                       |
+| `$..book[?(@.price<10)]`                   | 过滤`price<10`的节点                         |
+| `$..*`                                     | 递归匹配所有子节点                           |
 
 对应的语法可直接到在 JSONPath 在线验证网站上进行测试。要提一点的是，jsonpath 是支持使用 || 与 && 进行过滤的，比如上面要获取 category 为 fiction，price 大于 10 的语法为`$..book[?(@.price>10 && @.category=="fiction")]` 结果如下
 
@@ -145,7 +145,7 @@ let names = cities.map(c => c.name)
 
 ### 结构
 
-![image-20210919194116296](https://img.kuizuo.cn/image-20210919194116296.png)
+![image-20210919194116296](https://img.mongorolls.cn/image-20210919194116296.png)
 
 ### 数据
 
@@ -436,7 +436,7 @@ console.log(groupList)
 
 于是了解到 jsonpath 后，我第一个时间就开始分析这样的数据，果不其然，得到了我想要的结果 ⬇️
 
-![image-20210919200826079](https://img.kuizuo.cn/image-20210919200826079.png)
+![image-20210919200826079](https://img.mongorolls.cn/image-20210919200826079.png)
 
 语法：`$..children[?(@.role=="group")]`
 

@@ -7,7 +7,7 @@ tags: [javascript, ast, reverse, project]
 keywords: [javascript, ast, reverse, project]
 ---
 
-基于 Babel 对 JS 代码进行混淆与还原操作的网站 [JS 代码混淆与还原 (kuizuo.cn)](http://deobfuscator.kuizuo.cn/)
+基于 Babel 对 JS 代码进行混淆与还原操作的网站 [JS 代码混淆与还原 (mongorolls.cn)](http://deobfuscator.mongorolls.cn/)
 
 ![js-de-obfuscator](https://github.com/kuizuo/js-deobfuscator/blob/main/images/1.png)
 
@@ -45,7 +45,7 @@ AST 能做为逆向分析的利器，可以将还原出来的代码替换原来�
 
 通过 AST 查看 node 节点，可以发现`value`正是我们想要的数据，但这里确显示的是`extra.raw`，实际上只需要遍历到相应的节点，然后 extra 属性给删除即可，同样的 Unicode 编码也是按上述方式显示。
 
-![image-20211224202108279](https://img.kuizuo.cn/image-20211224202108279.png)
+![image-20211224202108279](https://img.mongorolls.cn/image-20211224202108279.png)
 
 具体遍历的代码如下
 
@@ -247,11 +247,7 @@ var _0x505b30 = (function () {
 
         if (0 === _0xb2c58f[_0x3028('0x3', '2Q@E')]) return _0x1efd4e
 
-        for (
-          _0x46992c = 0;
-          _0x46992c < _0xb2c58f[_0x3028('0x4', '[YLR')];
-          _0x46992c++
-        )
+        for (_0x46992c = 0; _0x46992c < _0xb2c58f[_0x3028('0x4', '[YLR')]; _0x46992c++)
           (_0x1efd4e =
             (_0x1efd4e << (_0x5cae2b ? 5 : 16)) -
             _0x1efd4e +
@@ -273,10 +269,7 @@ var _0x505b30 = (function () {
               } else {
                 if (_0x35fd15) {
                   if (_0x3028('0x13', 'r8Qx') !== _0x3028('0x14', 'YLF%')) {
-                    var _0x1fa1e3 = _0x35fd15[_0x3028('0x15', 'sLdn')](
-                      _0x3d32a2,
-                      arguments,
-                    )
+                    var _0x1fa1e3 = _0x35fd15[_0x3028('0x15', 'sLdn')](_0x3d32a2, arguments)
 
                     _0x35fd15 = null
                     return _0x1fa1e3
@@ -296,9 +289,7 @@ var _0x505b30 = (function () {
     ;(function () {
       return ![]
     })
-      [_0x3028('0x16', 'Yp5j')](
-        _0x3028('0x17', ']R4I') + _0x3028('0x18', 'M10H'),
-      )
+      [_0x3028('0x16', 'Yp5j')](_0x3028('0x17', ']R4I') + _0x3028('0x18', 'M10H'))
       [_0x3028('0x19', '%#u0')]('stateObject')
   }
 })()
@@ -319,9 +310,7 @@ var _0x505b30 = (function () {
 
         for (_0x46992c = 0; _0x46992c < _0xb2c58f['length']; _0x46992c++)
           (_0x1efd4e =
-            (_0x1efd4e << (_0x5cae2b ? 5 : 16)) -
-            _0x1efd4e +
-            _0xb2c58f['charCodeAt'](_0x46992c)),
+            (_0x1efd4e << (_0x5cae2b ? 5 : 16)) - _0x1efd4e + _0xb2c58f['charCodeAt'](_0x46992c)),
             (_0x1efd4e = _0x5cae2b ? _0x1efd4e : ~_0x1efd4e)
 
         return 2147483647 & _0x1efd4e
@@ -733,11 +722,7 @@ hexUnicodeToString() {
 不过还有一些可以特定的替换，比如 for i
 
 ```javascript
-for (
-  var _0x1e5665 = 0, _0x3620b9 = this['JIyEgF']['length'];
-  _0x1e5665 < _0x3620b9;
-  _0x1e5665++
-) {
+for (var _0x1e5665 = 0, _0x3620b9 = this['JIyEgF']['length']; _0x1e5665 < _0x3620b9; _0x1e5665++) {
   this['JIyEgF']['push'](Math['round'](Math['random']()))
   _0x3620b9 = this['JIyEgF']['length']
 }
@@ -764,6 +749,6 @@ for (
 
 ## JS 混淆与还原的网站
 
-针对上述还原操作其实还不够明显，于是就编写了一个在线对 JS 代码混淆与还原的网站（主要针对还原）– [JS 代码混淆与还原 (kuizuo.cn)](https://deobfuscator.kuizuo.cn/)
+针对上述还原操作其实还不够明显，于是就编写了一个在线对 JS 代码混淆与还原的网站（主要针对还原）– [JS 代码混淆与还原 (mongorolls.cn)](https://deobfuscator.mongorolls.cn/)
 
 其实也就是对上述的还原代码进行封装成工具使用。

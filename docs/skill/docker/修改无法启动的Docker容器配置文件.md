@@ -18,7 +18,7 @@ keywords: [docker, elasticsearch]
 
 于是，进入 elasticsearch 容器，找到`elasticsearch.yml`（注意这个文件）
 
-![image-20210817142200704](https://img.kuizuo.cn/image-20210817142200704.png)
+![image-20210817142200704](https://img.mongorolls.cn/image-20210817142200704.png)
 
 添加了下列两个参数
 
@@ -56,6 +56,6 @@ docker start elasticsearch
 /var/lib/docker/overlay2/d20c175dffdc80467dbce39d4a5bc6dc9f7ff239564a8ee1ac8c4bcfdd9a461e/merged/usr/share/elasticsearch/config/jvm.options
 ```
 
-![image-20210817145633786](https://img.kuizuo.cn/image-20210817145633786.png)
+![image-20210817145633786](https://img.mongorolls.cn/image-20210817145633786.png)
 
 如图，设置对应的内存大小即可，重启 elasticsearch 容器即可

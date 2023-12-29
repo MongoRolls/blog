@@ -1,7 +1,7 @@
 {
   "index_name": "kuizuo",
-  "start_urls": ["https://kuizuo.cn/"],
-  "sitemap_urls": ["https://kuizuo.cn/sitemap.xml"],
+  "start_urls": ["https://mongorolls.cn/"],
+  "sitemap_urls": ["https://mongorolls.cn/sitemap.xml"],
   "selectors": {
     "lvl0": {
       "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
@@ -18,21 +18,8 @@
     "text": "article p, article li, article td:last-child"
   },
   "custom_settings": {
-    "attributesForFaceting": [
-      "type",
-      "lang",
-      "language",
-      "version",
-      "docusaurus_tag"
-    ],
-    "attributesToRetrieve": [
-      "hierarchy",
-      "content",
-      "anchor",
-      "url",
-      "url_without_anchor",
-      "type"
-    ],
+    "attributesForFaceting": ["type", "lang", "language", "version", "docusaurus_tag"],
+    "attributesToRetrieve": ["hierarchy", "content", "anchor", "url", "url_without_anchor", "type"],
     "attributesToHighlight": ["hierarchy", "content"],
     "attributesToSnippet": ["content:10"],
     "camelCaseAttributes": ["hierarchy", "content"],
@@ -48,20 +35,8 @@
     ],
     "distinct": true,
     "attributeForDistinct": "url",
-    "customRanking": [
-      "desc(weight.pageRank)",
-      "desc(weight.level)",
-      "asc(weight.position)"
-    ],
-    "ranking": [
-      "words",
-      "filters",
-      "typo",
-      "attribute",
-      "proximity",
-      "exact",
-      "custom"
-    ],
+    "customRanking": ["desc(weight.pageRank)", "desc(weight.level)", "asc(weight.position)"],
+    "ranking": ["words", "filters", "typo", "attribute", "proximity", "exact", "custom"],
     "highlightPreTag": "<span class='algolia-docsearch-suggestion--highlight'>",
     "highlightPostTag": "</span>",
     "minWordSizefor1Typo": 3,

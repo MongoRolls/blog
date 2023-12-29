@@ -145,7 +145,7 @@ export default function App() {
 
   React.useEffect(() => {
     async function fetchData() {
-      const data = await (await fetch('https://api.kuizuo.cn/api/one')).text()
+      const data = await (await fetch('https://api.mongorolls.cn/api/one')).text()
       console.log(data)
       setData(data)
     }

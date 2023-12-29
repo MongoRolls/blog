@@ -372,7 +372,7 @@ SELECT now() --查询当前时间
 
 一共有 7 中 JOIN 查询
 
-![img](https://img.kuizuo.cn/20201009150524563.png)
+![img](https://img.mongorolls.cn/20201009150524563.png)
 
 实际上用的最多的也就是以下三种，区别如下
 
@@ -553,12 +553,7 @@ COUNT(\*) —获取全部计数结果，不会忽略 NULL 值
 
 COUNT(1) —忽略所有列，用 1 代表代码行，不会忽略 NULL 值
 
-执行效率上：
-列名为主键，count(列名)会比 count(1)快
-列名不为主键，count(1)会比 count(列名)快
-如果表多个列并且没有主键，则 count（1） 的执行效率优于 count(\*)
-如果有主键，则 select count（主键）的执行效率是最优的
-如果表只有一个字段，则 select count(\*)最优。
+执行效率上：列名为主键，count(列名)会比 count(1)快列名不为主键，count(1)会比 count(列名)快如果表多个列并且没有主键，则 count（1） 的执行效率优于 count(\*) 如果有主键，则 select count（主键）的执行效率是最优的如果表只有一个字段，则 select count(\*)最优。
 
 > 参考链接 [count(1)、count(\*)与 count(列名)的执行区别](https://www.cnblogs.com/Memories-off/p/10435558.html)
 
@@ -815,7 +810,7 @@ DROP USER kuizuo
 
 在 Navicat 中，右键数据库，可逆向数据库到模型，模型的结果图如下
 
-![image-20210102213536190](https://img.kuizuo.cn/image-20210102213536190.png)
+![image-20210102213536190](https://img.mongorolls.cn/image-20210102213536190.png)
 
 通过数据库模型，可以方便的分析该数据库中的关系，同时也可添加相应的数据等。
 

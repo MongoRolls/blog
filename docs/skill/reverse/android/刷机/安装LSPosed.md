@@ -20,10 +20,7 @@ LSPosed 是一款开源在 GitHub 上的 Xposed 框架，全称：LSPosed Xposed
 
 ## 为什么是 Lsposed
 
-1️⃣ Edxposed 面临着停更的风险，且稳定性欠佳， Lsposed 则可以保证长期更新，并会持续加入新的功能。
-2️⃣ Lsposed 修复了 Edxoosed 的一系列 bug（比如偶尔软重启），并提升了其稳定性和性能。由于 Lsposed 默认开启白名单模式，模块只受用于需要的应用，系统资源的消耗被大大减少，耗电量也有所改善。
-3️⃣ 而且，对于绝大多数模块而言，Lsposed 只需重启该应用即可激活，而无需重启整个系统（部分涉及系统框架的模块除外）
-4️⃣ 此外，Lsposed 的默认白名单设定使得用户的个人隐私得到保障，进一步加强了系统安全性。借助 Magisk Hide 功能，Lsposed 可以很好地隐藏自己，避免被部分重要应用识别
+1️⃣ Edxposed 面临着停更的风险，且稳定性欠佳， Lsposed 则可以保证长期更新，并会持续加入新的功能。2️⃣ Lsposed 修复了 Edxoosed 的一系列 bug（比如偶尔软重启），并提升了其稳定性和性能。由于 Lsposed 默认开启白名单模式，模块只受用于需要的应用，系统资源的消耗被大大减少，耗电量也有所改善。3️⃣ 而且，对于绝大多数模块而言，Lsposed 只需重启该应用即可激活，而无需重启整个系统（部分涉及系统框架的模块除外）4️⃣ 此外，Lsposed 的默认白名单设定使得用户的个人隐私得到保障，进一步加强了系统安全性。借助 Magisk Hide 功能，Lsposed 可以很好地隐藏自己，避免被部分重要应用识别
 
 ## 安装
 
@@ -47,8 +44,8 @@ Riru 模块地址：[Releases · RikkaApps/Riru (github.com)](https://github.com
 
 ### 安装 Lsposed
 
-同样的，安装 Riru 后在 Magisk 模块仓库中搜索 LSPosed（一般在在线首页中就有），然后点击安装后重启便可。![image-20211209162111421](https://img.kuizuo.cn/image-20211209162111421.png)
+同样的，安装 Riru 后在 Magisk 模块仓库中搜索 LSPosed（一般在在线首页中就有），然后点击安装后重启便可。![image-20211209162111421](https://img.mongorolls.cn/image-20211209162111421.png)
 
 这时候桌面便会有 LSPosed 应用，这时候就可以愉快去下载 Xposed 模块了。
 
-![image-20211210015027929](https://img.kuizuo.cn/image-20211210015027929.png)
+![image-20211210015027929](https://img.mongorolls.cn/image-20211210015027929.png)

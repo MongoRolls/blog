@@ -16,7 +16,7 @@ keywords: [git]
 git remote set-url --add origin 远程仓库地址
 ```
 
-如：`git remote set-url --add origin https://git.kuizuo.cn/kuizuo/blog.git`
+如：`git remote set-url --add origin https://git.mongorolls.cn/kuizuo/blog.git`
 
 此时打开 `.git/config`，可以看到这样的配置
 
@@ -24,7 +24,7 @@ git remote set-url --add origin 远程仓库地址
 [remote "origin"]
     url = https://github.com/mongoRolls/blog.git
     fetch = +refs/heads/*:refs/remotes/origin/*
-    url = https://git.kuizuo.cn/kuizuo/blog.git
+    url = https://git.mongorolls.cn/kuizuo/blog.git
 ```
 
 上述命令 git 配置添加新的 url 记录。也可手动添加、修改。

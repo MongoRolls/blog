@@ -25,7 +25,7 @@ APP 例子：隐约
 
 贴上下载地址及密码
 
-证书: https://img.kuizuo.cn/cert.p12
+证书: https://img.mongorolls.cn/cert.p12
 
 密码: `xinghekeji888.x`
 
@@ -62,10 +62,10 @@ axios
       }),
     },
   )
-  .then((res) => {
+  .then(res => {
     console.log(res.data)
   })
-  .catch((error) => {
+  .catch(error => {
     console.log(error.response.data)
   })
 ```

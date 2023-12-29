@@ -3,14 +3,14 @@
   "version": "3.0.0",
   "author": {
     "url": "https://github.com/mongoRolls",
-    "email": "hi@kuizuo.cn",
+    "email": "hi@mongorolls.cn",
     "name": "Kuizuo"
   },
   "repository": {
     "url": "https://github.com/mongoRolls/blog",
     "type": "git"
   },
-  "homepage": "https://kuizuo.cn",
+  "homepage": "https://mongorolls.cn",
   "license": "MIT",
   "scripts": {
     "docusaurus": "docusaurus",

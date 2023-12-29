@@ -54,4 +54,4 @@ ESLint 是一种用于识别和报告 ECMAScript/JavaScript 代码中发现的�
 
 由于 eslint 配置相对繁琐，所以很多时候编辑器的 eslint 可能都没有生效，具体看编辑器下方状态栏或者日志输出查看ESLint状态。如果为警告（黄色感叹号）或者错误（红色），那么ESLint就是没配置好，可能缺少某些依赖文件或是配置文件写错了。
 
-![](https://img.kuizuo.cn/image-20221002163239434.png)
+![](https://img.mongorolls.cn/image-20221002163239434.png)

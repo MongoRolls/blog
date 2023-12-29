@@ -10,7 +10,7 @@ const beian1 = '闽公网安备35021102000847号'
 
 const config: Config = {
   title: '句芒的小站',
-  url: 'https://kuizuo.cn',
+  url: 'https://mongorolls.cn',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'kuizuo',
@@ -86,7 +86,7 @@ const config: Config = {
             { label: '归档', to: 'blog/archive' },
             { label: '技术笔记', to: 'docs/skill' },
             { label: '实战项目', to: 'project' },
-            { label: '前端示例', to: 'https://example.kuizuo.cn' },
+            { label: '前端示例', to: 'https://example.mongorolls.cn' },
           ],
         },
         {

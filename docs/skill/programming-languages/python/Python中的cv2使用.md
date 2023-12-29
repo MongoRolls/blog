@@ -118,7 +118,7 @@ for box in poses:
 cv2.imwrite("result.jpg", img)
 ```
 
-![result](https://img.kuizuo.cn/result.png)
+![result](https://img.mongorolls.cn/result.png)
 
 ### 添加文本
 
@@ -134,7 +134,7 @@ cv2.imwrite("result.jpg", img_text)
 
 效果如下
 
-![image-20220306203918438](https://img.kuizuo.cn/image-20220306203918438.png)
+![image-20220306203918438](https://img.mongorolls.cn/image-20220306203918438.png)
 
 ### 图片缩放
 

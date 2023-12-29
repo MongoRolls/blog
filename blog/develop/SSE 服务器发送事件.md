@@ -11,7 +11,7 @@ keywords: [http]
 
 先放一张 gif 图展示下效果
 
-![sse](https://img.kuizuo.cn/sse.gif)
+![sse](https://img.mongorolls.cn/sse.gif)
 
 实现上面这个效果之前，先补充点前置知识
 
@@ -85,7 +85,7 @@ http
 像上面是直接向服务器请求，浏览器有`EventSource`对象，比如监听 SSE 连接，以及主动关闭 SSE 连接，具体的演示代码如下
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -124,7 +124,7 @@ http
 
 并且由于是调用浏览器 API，在开发者工具的网络面板上还能看到对应的 EventStream，像下面这样
 
-![image-20220316134321431](https://img.kuizuo.cn/image-20220316134321431.png)
+![image-20220316134321431](https://img.mongorolls.cn/image-20220316134321431.png)
 
 ## 参考链接
 

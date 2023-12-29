@@ -13,7 +13,7 @@ keywords: [mongodb]
 
 需求是这样的，要统计每一周的各个商品的销售记录，使用 echarts 图表呈现，如下图
 
-![image-20210830214556262](https://img.kuizuo.cn/image-20210830214556262.png)
+![image-20210830214556262](https://img.mongorolls.cn/image-20210830214556262.png)
 
 说实话，一开始听到这个需求的时候，我是有点慌的，因为 MongoDB 的分组玩的比较少（Mysql 也差不多），又要按照对应的星期来进行分组，这在之前学习 MongoDB 的时候还没接触过，于是就准备写了这篇文章，来记录下我是如何进行分组的
 
@@ -49,7 +49,7 @@ let list = await this.goodsModel
     { $project: { date: '$_id', _id: 0, count: 1 } }, // 再使用$project将_id改名为date
     { $sort: { date: -1 } }, // 根据日期倒序
   ])
-  .exec();
+  .exec()
 ```
 
 或者使用时间操作符（更准确一点）
@@ -64,7 +64,7 @@ let list = await this.goodsModel
     { $project: { date: '$_id', _id: 0, count: 1 } }, // 再使用$project将_id改名为date
     { $sort: { date: -1 } }, // 根据日期倒序
   ])
-  .exec();
+  .exec()
 ```
 
 通过
@@ -101,7 +101,7 @@ $project: { day: { $dateToString: { format: "%Y-%m-%d", date: "$created_at" } } 
 $project: {
   week: {
     $dayOfWeek: {
-      date: '$created_at';
+      date: '$created_at'
     }
   }
 }
@@ -111,7 +111,7 @@ $project: {
 
 ```js
 // 要获取的是一周前的零点时间
-let lastweekDay = dayjs(dayjs().add(-7, 'day').format('YYYY-MM-DD')).valueOf();
+let lastweekDay = dayjs(dayjs().add(-7, 'day').format('YYYY-MM-DD')).valueOf()
 
 let list = await this.goodsModel
   .aggregate([
@@ -121,13 +121,13 @@ let list = await this.goodsModel
     { $project: { week: '$_id', _id: 0, count: 1 } }, // 再使用$project将_id改名为week
     { $sort: { week: 1 } }, // 根据星期正序
   ])
-  .exec();
+  .exec()
 ```
 
 获取的结果如下
 
 ```js
-[
+;[
   { count: 29, week: 1 }, // 星期七(日)
   { count: 54, week: 2 }, // 星期一
   { count: 1, week: 3 }, // 星期二
@@ -135,7 +135,7 @@ let list = await this.goodsModel
   { count: 12, week: 5 }, // 星期四
   { count: 17, week: 6 }, // 星期五
   { count: 16, week: 7 }, // 星期六
-];
+]
 ```
 
 但是，细心的你可能会发现，貌似数据对不上，注当天时间为 2021-08-30，星期一
@@ -196,7 +196,7 @@ let list = await this.goodsModel
     { $project: { week: '$_id', _id: 0, goods: 1 } },
     { $sort: { week: 1 } },
   ])
-  .exec();
+  .exec()
 ```
 
 可得到的数据却是这样的
@@ -204,11 +204,16 @@ let list = await this.goodsModel
 ```json
 [
   {
-    "goods": [4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1],
+    "goods": [
+      4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1
+    ],
     "week": 1
   },
   {
-    "goods": [1, 1, 1, 1, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 4, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "goods": [
+      1, 1, 1, 1, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1,
+      1, 1, 1, 1, 4, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+    ],
     "week": 2
   },
   {
@@ -248,7 +253,7 @@ let list = await this.goodsModel
     { $sort: { week: 1 } },
     { $unwind: '$goods' },
   ])
-  .exec();
+  .exec()
 ```
 
 得到的数据（省略一堆）
@@ -270,7 +275,7 @@ let list = await this.goodsModel
 最终完整代码
 
 ```js
-let lastweekDay = dayjs(dayjs().add(-7, 'day').format('YYYY-MM-DD')).valueOf();
+let lastweekDay = dayjs(dayjs().add(-7, 'day').format('YYYY-MM-DD')).valueOf()
 
 let list = await this.goodsModel
   .aggregate([
@@ -281,25 +286,25 @@ let list = await this.goodsModel
     { $sort: { week: 1 } },
     // { $unwind: "$goods" },
   ])
-  .exec();
+  .exec()
 
 function getEleNums(data) {
-  var map = {};
-  data.forEach((e) => {
+  var map = {}
+  data.forEach(e => {
     if (map[e]) {
-      map[e] += 1;
+      map[e] += 1
     } else {
-      map[e] = 1;
+      map[e] = 1
     }
-  });
-  return map;
+  })
+  return map
 }
 
-list = list.map((l) => {
-  l.goods = getEleNums(l.goods);
-  return l;
-});
-cosnole.log(list);
+list = list.map(l => {
+  l.goods = getEleNums(l.goods)
+  return l
+})
+cosnole.log(list)
 ```
 
 运行后的 list 结果为

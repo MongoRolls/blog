@@ -19,7 +19,7 @@ function SiteInfo() {
         {`
   title: '句芒的小站'
   description: '道阻且长，行则将至'
-  avatar: 'https://kuizuo.cn/img/logo.png'
+  avatar: 'https://mongorolls.cn/img/logo.png'
   `}
       </CodeBlock>
     </div>
