@@ -25,7 +25,7 @@ export function App(props) {
   const [count, setCount] = React.useState(0)
 
   return (
-    <div className='App'>
+    <div className="App">
       <div>{count}</div>
       <button onClick={() => setCount(() => count + 1)}>add</button>
       <button onClick={() => setCount(count + 1)}>add</button>
@@ -61,13 +61,13 @@ export default function App(props) {
       <div>{user.age}</div>
       <button
         onClick={() => {
-          setUser((obj) => ({
+          setUser(obj => ({
             ...obj,
-            name: '愧怍',
+            name: '句芒',
           }))
         }}
       >
-        set name as 愧怍
+        set name as 句芒
       </button>
     </div>
   )
@@ -84,12 +84,12 @@ export default function App(props) {
 
   return (
     <div className="App">
-      {arr.map((a) => (
+      {arr.map(a => (
         <div>{a}</div>
       ))}
       <button
         onClick={() => {
-          setArr((arr) => [...arr, '123'])
+          setArr(arr => [...arr, '123'])
         }}
       >
         append
@@ -97,7 +97,6 @@ export default function App(props) {
     </div>
   )
 }
-
 ```
 
 useState 对于复杂类型而言，尤其是在赋值操作是比较麻烦的。没办法，因为需要更改状态就需要调用 setState 方法，而 setState 方法需要传入最终完整的数据。
@@ -156,7 +155,6 @@ export default function App() {
 
   return <div>{data}</div>
 }
-
 ```
 
 此外 componentWillUnmount 生命周期也可在 useEffect 中执行。
@@ -172,12 +170,11 @@ export default function App() {
     document.title = `You clicked ${count} times`
 
     return () => {
-        // 可用于做清除，相当于 class 组件的 componentWillUnmount
+      // 可用于做清除，相当于 class 组件的 componentWillUnmount
     }
-
   }, [count]) // 指定依赖项为 count，在 count 更新时执行该副作用
 
-  return <div onClick={() => setCount(count+1)}>{count}</div>
+  return <div onClick={() => setCount(count + 1)}>{count}</div>
 }
 ```
 
@@ -212,8 +209,8 @@ useCallback 与 useMono 的作用都是一样的，只不过前者专门为函�
 
 ```tsx
 const handleMegaBoost = React.useMemo(() => {
-  return function() {
-    setCount((currentValue) => currentValue + 1234)
+  return function () {
+    setCount(currentValue => currentValue + 1234)
   }
 }, [])
 ```
@@ -222,7 +219,7 @@ const handleMegaBoost = React.useMemo(() => {
 
 ```tsx
 const handleMegaBoost = React.useCallback(() => {
-  setCount((currentValue) => currentValue + 1234)
+  setCount(currentValue => currentValue + 1234)
 }, [])
 ```
 
@@ -230,9 +227,9 @@ const handleMegaBoost = React.useCallback(() => {
 
 ```tsx
 // This:
-React.useCallback(function helloWorld(){}, [])
+React.useCallback(function helloWorld() {}, [])
 // ...Is functionally equivalent to this:
-React.useMemo(() => function helloWorld(){}, [])
+React.useMemo(() => function helloWorld() {}, [])
 ```
 
 对于 useMono 和 useCallback 强烈推荐阅读[Understanding useMemo and useCallback (joshwcomeau.com)](https://www.joshwcomeau.com/react/usememo-and-usecallback/)
@@ -257,7 +254,7 @@ function TextInputWithFocusButton() {
   }
   return (
     <>
-      <input ref={inputEl} type='text' />
+      <input ref={inputEl} type="text" />
       <button onClick={onButtonClick}>Focus the input</button>
     </>
   )
@@ -278,7 +275,7 @@ const MyContext = React.createContext(initialValue)
 function App() {
   return (
     // 通过 Context.Provider 传递 context 的值
-    <MyContext.Provider value='1'>
+    <MyContext.Provider value="1">
       <Container />
     </MyContext.Provider>
   )
@@ -293,7 +290,6 @@ function Test() {
   const theme = useContext(MyContext) // 1
   return <div></div>
 }
-
 ```
 
 更倾向的做法是将`const MyContext = React.createContext(initialValue)` 存在在`src/contexts`目录下，以便于其他组件引用
@@ -349,7 +345,7 @@ function Checkbox() {
   return (
     <>
       <label htmlFor={id}>Do you like React?</label>
-      <input id={id} type="checkbox" name="react"/>
+      <input id={id} type="checkbox" name="react" />
     </>
   )
 }

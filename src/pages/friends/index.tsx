@@ -17,7 +17,7 @@ function SiteInfo() {
     <div className={styles.siteInfo}>
       <CodeBlock language="yaml" title="本站信息">
         {`
-  title: '愧怍的小站'
+  title: '句芒的小站'
   description: '道阻且长，行则将至'
   avatar: 'https://kuizuo.cn/img/logo.png'
   `}
