@@ -6,10 +6,10 @@ export const Friends: Friend[] = [
     avatar: '/img/friend/zxuqian.png',
   },
   {
-    title: '鲸落',
-    description: '心中无女人，代码自然神',
-    website: 'http://www.xiaojunnan.cn/',
-    avatar: '/img/friend/xiaojunnan.png',
+    title: 'lkk',
+    description: '游戏开发的🐹🐹',
+    website: 'https://lkknb.top',
+    avatar: '/img/friend/jetzihan.png',
   },
   {
     title: 'pansy',
