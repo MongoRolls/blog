@@ -6,7 +6,7 @@ authors: kuizuo
 tags: [nest, swagger]
 keywords: [nest, swagger]
 description: nest.js 添加 swagger 响应数据文档
-image: https://img.mongorolls.cn/202307180126751.png
+image: https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/test.png
 ---
 
 <!-- truncate -->
