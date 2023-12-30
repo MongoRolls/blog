@@ -1,6 +1,6 @@
 ---
 slug: narrate-a-college-student
-title: 叙一名转专业+休学的大学生经历
+title: test
 date: 2023-07-11
 authors: kuizuo
 tags: [年中总结, 人生感悟]
