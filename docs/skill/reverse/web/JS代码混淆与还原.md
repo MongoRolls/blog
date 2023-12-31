@@ -8,7 +8,3 @@ keywords: [javascript, deobfuscator]
 ---
 
 <!-- truncate -->
-
-[JS 代码之还原](/blog/js-code-deobfuscator)
-
-[JS 代码之混淆](/blog/js-code-obfuscator)
