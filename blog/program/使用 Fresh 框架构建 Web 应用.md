@@ -112,7 +112,7 @@ SSR 通常是将数据通过服务端的前端框架渲染成 HTML，直接将 H
 {
   "title": "愧怍的小站",
   "description": "Blog",
-  "image": "https://mongorolls.cn/img/logo.png",
+  "image": "https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/logo.png",
   "url": "https://mongorolls.cn"
 }
 ```

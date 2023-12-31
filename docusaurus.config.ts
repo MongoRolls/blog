@@ -15,7 +15,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
   organizationName: 'kuizuo',
   projectName: 'blog',
-  tagline: '道阻且长，行则将至',
+  tagline: '选择大于努力',
   themeConfig: {
     // announcementBar: {
     //   id: 'announcementBar-3',

@@ -9,7 +9,8 @@ export const Friends: Friend[] = [
     title: 'lkk',
     description: '游戏开发的🐹🐹',
     website: 'https://lkknb.top',
-    avatar: '/img/friend/jetzihan.png',
+    avatar:
+      'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/4a702795e6ee980a59295042101a3e65_1.jpg',
   },
   {
     title: 'pansy',

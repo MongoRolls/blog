@@ -18,8 +18,8 @@ function SiteInfo() {
       <CodeBlock language="yaml" title="本站信息">
         {`
   title: '句芒的小站'
-  description: '道阻且长，行则将至'
-  avatar: 'https://mongorolls.cn/img/logo.png'
+  description: '选择大于努力'
+  avatar: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/logo.png'
   `}
       </CodeBlock>
     </div>
