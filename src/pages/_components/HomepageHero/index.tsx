@@ -152,7 +152,7 @@ function Name() {
           e.currentTarget.style.setProperty('--mouse-y', `${bounding.y}px`)
         }}
       >
-        <Translate id="homepage.hero.name">句芒</Translate>
+        <Translate id="homepage.hero.name">MongoRolls</Translate>
       </span>
       <span className={styles.wave}>👋</span>
     </motion.div>

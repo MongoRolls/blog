@@ -17,7 +17,7 @@ function SiteInfo() {
     <div className={styles.siteInfo}>
       <CodeBlock language="yaml" title="本站信息">
         {`
-  title: '句芒的小站'
+  title: 'MongoRolls的小站'
   description: '选择大于努力'
   avatar: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/logo.png'
   `}

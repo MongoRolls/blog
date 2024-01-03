@@ -13,7 +13,7 @@ authors: kuizuo
 
 ```typescript title='docusaurus.config.ts' icon='logos:docusaurus'
 const config: Config = {
-  title: '句芒的小站',
+  title: 'MongoRolls的小站',
   titleDelimiter: '-',
   url: 'https://mongorolls.cn',
   baseUrl: '/',
@@ -26,7 +26,7 @@ const config: Config = {
     metadata: [
       {
         name: 'keywords',
-        content: '句芒, kuizuo, blog, javascript, typescript, node, react, vue, web, 前端, 后端',
+        content: 'MongoRolls, kuizuo, blog, javascript, typescript, node, react, vue, web, 前端, 后端',
       },
     ],
     // ...
@@ -49,7 +49,7 @@ export default config
 
 ### 基本信息
 
-站点名和作者名只需要搜索 **句芒** 便能找到关键位置
+站点名和作者名只需要搜索 **MongoRolls** 便能找到关键位置
 
 ### 关于我
 

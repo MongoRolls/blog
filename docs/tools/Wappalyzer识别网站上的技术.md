@@ -28,7 +28,7 @@ Wappalyzer 官网
 
 ![image-20210729074332788](https://img.mongorolls.cn/image-20210729074332788.png)
 
-句芒的个人博客
+MongoRolls的个人博客
 
 ![image-20210802131116542](https://img.mongorolls.cn/image-20210802131116542.png)
 

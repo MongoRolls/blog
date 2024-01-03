@@ -28,8 +28,8 @@ plugins: [
         defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
       feedOptions: {
         type: 'all',
-        title: '句芒',
-        copyright: `Copyright © ${new Date().getFullYear()} 句芒 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
+        title: 'MongoRolls',
+        copyright: `Copyright © ${new Date().getFullYear()} MongoRolls Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
       },
     },
   ],

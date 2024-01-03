@@ -88,7 +88,7 @@ docker restart elasticsearch
 POST test/_analyze
 {
   "analyzer": "ik_max_word",
-  "text": "你好我是句芒"
+  "text": "你好我是MongoRolls"
 }
 ```
 
