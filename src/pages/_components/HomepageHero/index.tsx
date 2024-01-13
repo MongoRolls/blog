@@ -166,8 +166,13 @@ export default function Hero() {
         <Name />
         <motion.p custom={2} initial="hidden" animate="visible" variants={variants}>
           <Translate id="homepage.hero.text">
-            {`在这里我会分享各类技术问题与有趣的算法或是生活分享，欢迎你阅读这些文章，并希望这些文章对你有所启发。`}
+            {`在这里我会分享各类技术问题与有趣的算法或是生活分享，
+            欢迎你阅读这些文章，并希望这些文章对你有所启发。
+            `}
           </Translate>
+          <a href={'https://my-chat-gpt-beta-ecru.vercel.app/'} target={'_blank'}>
+            <Translate id="hompage.hero.introduce">gpt</Translate>
+          </a>
         </motion.p>
         <motion.div custom={3} initial="hidden" animate="visible" variants={variants}>
           <SocialLinks />

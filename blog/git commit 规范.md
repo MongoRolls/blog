@@ -14,6 +14,8 @@ description: git commit 规范
 
 
 
+<!-- truncate -->
+
 提交规范主要是为了让开发者提交完整的更新信息，方便查阅。
 
 目前最为流行的提交信息规范来自于 Angular 团队。

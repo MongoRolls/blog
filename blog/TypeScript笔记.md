@@ -12,6 +12,8 @@ keywords: [知识总结, 学习感悟]
 description: 从入门到AnyScript学习笔记
 ---
 
+<!-- truncate -->
+
 ## 学习资料
 
 [1.阮一峰《TypeScript 教程》](https://wangdoc.com/)

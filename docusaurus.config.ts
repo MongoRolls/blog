@@ -99,7 +99,7 @@ const config: Config = {
               label: '掘金',
               href: 'https://juejin.cn/user/2377593299678135',
             },
-            { label: 'Discord', href: 'https://discord.gg/M8cVcjDxkz' },
+            { label: 'Discord', href: 'https://discord.com' },
           ],
         },
         {
