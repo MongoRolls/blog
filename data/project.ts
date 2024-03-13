@@ -8,6 +8,24 @@ export const projects: Project[] = [
     tags: ['opensource', 'design', 'favorite'],
     type: 'web',
   },
+  {
+    title: '即时通信 UI库',
+    description: '即时通信应用 UI 组件库，贴近day.js风格',
+    preview: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/chat-ui.png',
+    website: 'https://componen-library.vercel.app/',
+    source: 'https://github.com/MongoRolls/Chat-ui',
+    tags: ['personal', 'design', 'favorite'],
+    type: 'web',
+  },
+  {
+    title: 'FoodMine',
+    description: '类doordash的在线点单平台',
+    preview: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/foodmine.png',
+    website: 'https://foodsmine-.onrender.com',
+    source: 'https://github.com/MongoRolls/foodsmine',
+    tags: ['personal', 'design', 'favorite'],
+    type: 'web',
+  },
 ]
 
 export type Tag = {
