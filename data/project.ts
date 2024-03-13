@@ -21,7 +21,7 @@ export const projects: Project[] = [
     title: 'FoodMine',
     description: '类doordash的在线点单平台',
     preview: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/foodmine.png',
-    website: 'https://foodsmine-.onrender.com',
+    website: 'https://foodsmine-1.onrender.com/',
     source: 'https://github.com/MongoRolls/foodsmine',
     tags: ['personal', 'design', 'favorite'],
     type: 'web',

@@ -19,39 +19,26 @@ const FeatureList: FeatureItem[] = [
   {
     title: translate({
       id: 'homepage.feature.developer',
-      message: 'TypeScript 全栈工程师',
+      message: '算法爱好者',
     }),
     Svg: WebDeveloperSvg,
-    description: (
-      <>
-        作为一名 TypeScript 全栈工程师，秉着能用 TS 绝不用 JS
-        的原则，为项目提供类型安全的保障，提高代码质量和开发效率。
-      </>
-    ),
+    description: <>打打cf,atcoder</>,
   },
   {
     title: translate({
       id: 'homepage.feature.spider',
-      message: '会点逆向 & 爬虫',
+      message: '前端react',
     }),
     Svg: SpiderSvg,
-    description: (
-      <>
-        作为一名曾学习与实践逆向工程两年半的开发者，对于逆向工程有着浓厚的兴趣，同时造就了超凡的阅读代码能力。没有看不懂的代码，只有不想看的代码。
-      </>
-    ),
+    description: <>to be 前端工程师</>,
   },
   {
     title: translate({
       id: 'homepage.feature.enthusiast',
-      message: '开源爱好者',
+      message: '技术爱好者',
     }),
     Svg: OpenSourceSvg,
-    description: (
-      <>
-        作为一名开源爱好者，积极参与开源社区，为开源项目贡献代码，希望有生之年能够构建出一个知名的开源项目。
-      </>
-    ),
+    description: <>学点新技术，做点新玩意</>,
   },
 ]
 
@@ -71,9 +58,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section
-      className={clsx(styles.featureContainer, 'container padding-vert--sm')}
-    >
+    <section className={clsx(styles.featureContainer, 'container padding-vert--sm')}>
       <SectionTitle icon={'ri:map-pin-user-line'}>
         <Translate id="homepage.feature.title">个人特点</Translate>
       </SectionTitle>
