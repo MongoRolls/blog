@@ -1,9 +1,9 @@
-import path from 'node:path'
-import type { Config } from '@docusaurus/types'
 import type * as Preset from '@docusaurus/preset-classic'
+import type { Config } from '@docusaurus/types'
+import path from 'node:path'
 import { themes } from 'prism-react-renderer'
-import { Social } from './src/components/SocialLinks'
 import { GiscusConfig } from './src/components/Comment'
+import { Social } from './src/components/SocialLinks'
 
 const beian = '没背'
 const beian1 = '没背'
@@ -24,15 +24,15 @@ const config: Config = {
     metadata: [
       {
         name: 'keywords',
-        content: 'MongoRolls, kuizuo',
+        content: 'MongoRolls',
       },
       {
         name: 'keywords',
-        content: 'blog, javascript, typescript, node, react, vue, web',
+        content: 'blog, javascript, typescript, node, react, web',
       },
       {
         name: 'keywords',
-        content: '编程爱好者, Web开发者, 写过爬虫, 学过逆向, 现在主攻ts全栈',
+        content: '编程爱好者, Web开发者',
       },
     ],
     docs: {
@@ -86,7 +86,6 @@ const config: Config = {
             { label: '归档', to: 'blog/archive' },
             { label: '技术笔记', to: 'docs/skill' },
             { label: '实战项目', to: 'project' },
-            { label: '前端示例', to: 'https://example.mongorolls.cn' },
           ],
         },
         {
