@@ -28,6 +28,8 @@ github是世界上(~~最大的同性交友网站~~) **代码托管平台**，并
 
 先贴份不错的教程--> [廖雪峰git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 
+[在线学习git](https://learngitbranching.js.org/?locale=zh_CN)
+
 这里用自己简单通俗的话总结一下git
 
 git是**分布式的版本控制系统**，是帮助我们个人开发或团队开发十分强劲的好用工具
@@ -79,7 +81,7 @@ git是**分布式的版本控制系统**，是帮助我们个人开发或团队�
 
 新手先注册github,本地安装git工具，在本地终端或者vscode等试试，再试试push到远程仓库上。
 
-[在线学习git](https://learngitbranching.js.org/?locale=zh_CN)
+
 
 ## 提交规范
 

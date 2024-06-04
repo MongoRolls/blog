@@ -1,5 +1,5 @@
-import React, { type ReactNode, type ComponentProps } from 'react'
 import clsx from 'clsx'
+import { type ComponentProps, type ReactNode } from 'react'
 import styles from './styles.module.css'
 
 export interface SvgIconProps extends ComponentProps<'svg'> {
