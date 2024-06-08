@@ -13,7 +13,7 @@ const config: Config = {
   url: 'https://mongorolls.cn',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'kuizuo',
+  organizationName: 'mongoRolls',
   projectName: 'blog',
   tagline: '选择大于努力',
   themeConfig: {
@@ -125,8 +125,8 @@ const config: Config = {
         `,
     },
     algolia: {
-      appId: 'GV6YN1ODMO',
-      apiKey: '50303937b0e4630bec4a20a14e3b7872',
+      appId: 'MH9B5Y1SFF',
+      apiKey: '1b6acf0239c53e702562e691b39d2848',
       indexName: 'mongorolls',
     },
     prism: {
