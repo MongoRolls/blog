@@ -126,7 +126,7 @@ const config: Config = {
     },
     algolia: {
       appId: 'MH9B5Y1SFF',
-      apiKey: '1b6acf0239c53e702562e691b39d2848',
+      apiKey: '6f26e184826b4596b7b4ff97226d6449',
       indexName: 'mongorolls',
     },
     prism: {
