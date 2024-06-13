@@ -1,5 +1,5 @@
 {
-  "index_name": "kuizuo",
+  "index_name": "mongorolls",
   "start_urls": ["https://mongorolls.cn/"],
   "sitemap_urls": ["https://mongorolls.cn/sitemap.xml"],
   "selectors": {
