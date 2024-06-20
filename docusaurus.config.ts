@@ -125,9 +125,9 @@ const config: Config = {
         `,
     },
     algolia: {
-      appId: 'MH9B5Y1SFF',
-      apiKey: '6f26e184826b4596b7b4ff97226d6449',
-      indexName: 'mongorolls',
+      appId: 'NLP63DGOPT',
+      apiKey: '3670629a89b5d9402ca5c5a7cd35e573',
+      indexName: 'MongoRolls',
     },
     prism: {
       theme: themes.oneLight,
