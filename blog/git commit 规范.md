@@ -1,17 +1,17 @@
 ---
-于 Angular 团队。于 Angular 团队。
-slug: git-tutorial
-title: git commit 规范
-date: 2024-01-07
+slug: "git-tutorial"
+title: "git commit 规范"
+date: "2024-01-07"
 authors:
-  name: 搬运的芒果
-  title: 大自然的搬运工
-  url: https://github.com/mongoRolls
-  image_url: /img/logo.webp
-tags: [知识总结, 学习感悟]
-keywords: [知识总结, 学习感悟]
-description: git commit 规范
+    name: "搬运的芒果"
+    title: "大自然的搬运工"
+    url: "https://github.com/mongoRolls"
+    image_url: "/img/logo.webp"
+tags: ["知识总结", "学习感悟"]
+keywords: ["知识总结", "学习感悟"]
+description: "git commit 规范"
 ---
+
 
 <!-- truncate -->
 
