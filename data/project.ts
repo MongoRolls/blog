@@ -26,6 +26,15 @@ export const projects: Project[] = [
     tags: ['personal', 'design', 'favorite'],
     type: 'web',
   },
+  {
+    title: 'monopolygo game',
+    description: '游戏工具wiki网站',
+    preview: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/foodmine.png',
+    website: 'https://monopolygo.game',
+    source: 'https://github.com',
+    tags: ['product', 'design', 'favorite'],
+    type: 'commerce',
+  },
 ]
 
 export type Tag = {
