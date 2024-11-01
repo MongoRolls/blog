@@ -11,7 +11,7 @@ const FriendCard = memo(({ friend }: { friend: Friend }) => (
       src={
         typeof friend.avatar === 'string'
           ? friend.avatar
-          : friend.avatar.src.src
+          : ''
       }
       alt={friend.title}
       className={clsx(styles.friendCardImage)}

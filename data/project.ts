@@ -29,7 +29,7 @@ export const projects: Project[] = [
   {
     title: 'monopolygo game',
     description: '游戏工具wiki网站',
-    preview: 'https://monopolygo.game/_next/static/media/page_bg1.303cd563.webp',
+    preview: 'https://d26o86wfn1rlgx.cloudfront.net/assets/home/mobile/joinOurCommunity/community_enus.webp',
     website: 'https://monopolygo.game',
     source: 'https://github.com',
     tags: ['product', 'design', 'favorite'],

@@ -17,10 +17,10 @@ function SiteInfo() {
     <div className={styles.siteInfo}>
       <CodeBlock language="yaml" title="本站信息">
         {`
-  title: 'MongoRolls的小站'
-  description: '选择大于努力'
-  avatar: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/logo.png'
-  `}
+        title: 'MongoRolls的小站'
+        description: '选择大于努力'
+        avatar: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/logo.png'
+        `}
       </CodeBlock>
     </div>
   )
