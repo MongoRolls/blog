@@ -14,7 +14,7 @@ export const Friends: Friend[] = [
   },
   {
     title: 'pansy',
-    description: '心中无女人，代码自然神',
+    description: '嵌入式大佬',
     website: 'https://pansyhou.top/',
     avatar: '/img/friend/innei.png',
   },
