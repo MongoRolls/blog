@@ -19,7 +19,7 @@ const removeHttps = (url: string) => {
   return url.replace(/(^\w+:|^)\/\//, '')
 }
 
-const defaultVelocity = 0.4
+const defaultVelocity = 1.4
 const showProjects = projects.filter(i => i.preview)
 
 const Slider = ({ items }: { items: Project[] }) => {

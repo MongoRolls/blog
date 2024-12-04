@@ -10,5 +10,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "stylelint.validate": ["css", "less", "postcss", "scss", "sass"]
+  "stylelint.validate": ["css", "less", "postcss", "scss", "sass"],
+  "cSpell.words": ["acmer"]
 }

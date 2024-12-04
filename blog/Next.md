@@ -7,8 +7,8 @@ authors:
   title: 前端 / 25届
   url: https://github.com/mongoRolls
   image_url: /img/logo.webp
-tags: [网站管理]
-keywords: [网站管理]
+tags: [Next.js]
+keywords: [Next.js]
 description: 记录Next使用技巧和知识笔记
 ---
 

@@ -27,10 +27,20 @@ export const projects: Project[] = [
     type: 'web',
   },
   {
-    title: 'monopolygo game',
+    title: 'Monopolygo Game',
     description: '游戏工具wiki网站',
-    preview: 'https://d26o86wfn1rlgx.cloudfront.net/assets/home/mobile/joinOurCommunity/community_enus.webp',
+    preview:
+      'https://d26o86wfn1rlgx.cloudfront.net/assets/home/mobile/joinOurCommunity/community_enus.webp',
     website: 'https://monopolygo.game',
+    source: 'https://github.com',
+    tags: ['product', 'design', 'favorite'],
+    type: 'commerce',
+  },
+  {
+    title: 'Block Blast',
+    description: '俄罗斯方块游戏解题工具',
+    preview: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/blockblast.png',
+    website: 'https://blockblastsolver.ai/',
     source: 'https://github.com',
     tags: ['product', 'design', 'favorite'],
     type: 'commerce',
