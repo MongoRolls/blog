@@ -3,7 +3,7 @@ id: frida-java-encryption-algorithm
 slug: /frida-java-encryption-algorithm
 title: Frida java层自吐加密算法
 date: 2021-02-10
-authors: kuizuo
+authors: Mongorolls
 tags: [frida, app, hook]
 keywords: [frida, app, hook]
 ---
@@ -24,7 +24,11 @@ Java.perform(function () {
   // console.log('frida 已启动');
   function showStacks(name = '') {
     if (config.showStacks) {
-      console.log(Java.use('android.util.Log').getStackTraceString(Java.use('java.lang.Throwable').$new(name)))
+      console.log(
+        Java.use('android.util.Log').getStackTraceString(
+          Java.use('java.lang.Throwable').$new(name),
+        ),
+      )
     }
   }
 
@@ -97,7 +101,10 @@ Java.perform(function () {
 
   const Mac = Java.use('javax.crypto.Mac')
   {
-    Mac.init.overload('java.security.Key', 'java.security.spec.AlgorithmParameterSpec').implementation = function (key, AlgorithmParameterSpec) {
+    Mac.init.overload(
+      'java.security.Key',
+      'java.security.spec.AlgorithmParameterSpec',
+    ).implementation = function (key, AlgorithmParameterSpec) {
       return this.init(key, AlgorithmParameterSpec)
     }
     Mac.init.overload('java.security.Key').implementation = function (key) {

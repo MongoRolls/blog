@@ -1,17 +1,17 @@
 ---
-slug: "git-tutorial"
-title: "git commit 规范"
-date: "2024-01-07"
+slug: 'git-tutorial'
+title: 'git commit 规范'
+date: '2024-01-07'
 authors:
-    name: "搬运的芒果"
-    title: "大自然的搬运工"
-    url: "https://github.com/mongoRolls"
-    image_url: "/img/logo.webp"
-tags: ["知识总结", "学习感悟"]
-keywords: ["知识总结", "学习感悟"]
-description: "git commit 规范"
----
+  name: MongoRolls
+  title: 前端 / 25届
+  url: https://github.com/mongorolls
+  image_url: /img/logo.webp
 
+tags: ['知识总结', '学习感悟']
+keywords: ['知识总结', '学习感悟']
+description: 'git commit 规范'
+---
 
 <!-- truncate -->
 
@@ -35,7 +35,7 @@ github是世界上(~~最大的同性交友网站~~) **代码托管平台**，并
 
 git是**分布式的版本控制系统**，是帮助我们个人开发或团队开发十分强劲的好用工具
 
-<img style= {{ width: '600px', height: '300px'}} src="https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/image-20240521225459227.png" />
+<img style= {{ width: '600px', height: '300px'}} src="<https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/image-20240521225459227.png>" />
 
 列举一下git的几个优点
 
@@ -47,7 +47,7 @@ git是**分布式的版本控制系统**，是帮助我们个人开发或团队�
 
 而且git的实现机制类似**主席树**，可以有效节省内存空间
 
-<img style= {{ width: '600px', height: '300px'}} src="https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/image-20240521230522586.png" />
+<img style= {{ width: '600px', height: '300px'}} src="<https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/image-20240521230522586.png>" />
 
 #### git的几个操作
 
@@ -56,61 +56,51 @@ git是**分布式的版本控制系统**，是帮助我们个人开发或团队�
 - **add**
   - `git add a.txt` 将a.txt加到暂存区
   - `git add .` 将目录下**所有**新增的文件内容加到暂存区
-  
 - **commit**
   - 多次add一次commit就ok了
   - `git commit -m "本次提交的信息，可见提交规范"`
   - 将暂存区加到工作区
-  
 - **pull**
+
   - `git pull [remote] [branch]`
   - 这个命令用于从远程获取代码并合并。实际上，`git pull` 是 `git fetch` 和 `git merge`的组合体。使用这个命令，Git 会像服务器请求更新，获取最新版本的代码，然后将这些更新合并到本地的工作分支。
-  
+
   :::danger
-  
-  `git pull`先把本地修改的代码`add `,`commit`起来，避免冲乱工作区，造成代码丢失
-  
+
+  `git pull`先把本地修改的代码`add`,`commit`起来，避免冲乱工作区，造成代码丢失
+
   或者没开发完成的代码可以`git stash`存起来
-  
+
   可以`git status`查看`commit`提交的记录
-  
+
   确认无语再`git pull`拉取远程仓库代码进行合并，冲突处理等
-  
+
   :::
-  
-  
-  
+
 - **fetch**
   - `git fetch [remote]`
   - 这个命令用于从远程获取代码，但是它不会自动合并或修改你当前的工作。换句话说，你可以在需要时进行 `git fetch` ，然后在一个合适的时间进行 `git merge`。
-  
 - **push**：`git push [remote] [branch]`
   - 这个命令用于将你的更改推送到远程分支。这样，你的团队成员就可以获取到你所作的更改。如果你和别人都在同一个分支进行开发，你可能需要先执行 `git pull` 来合并代码，以确保你的更改能够顺利推送到远程。
-  
 - **branch**：在 Git 中，分支是代码库不同开发版本的指针。以下是关于 `git branch` 的一些常见用法：
   - `git branch`：列出所有的本地分支。
   - `git branch [branch-name]`：创建一个新的分支。这并不会自动切换到这个新分支，你需要使用 `git checkout` 命令来切换分支。
   - `git branch -d [branch-name]`：删除一个分支，但是在你没有合并分支的更改之前，你将不能删除这个分支。
   - `git branch -D [branch-name]`：强制删除一个分支，即使你没有合并分支的更改，你也能够删除这个分支（谨慎使用）。
-  
 - **checkout**：`git checkout` 是切换和恢复工作目录文件的命令，它有多种用法，包括：
   - `git checkout [branch-name]`：切换到一个已存在的分支。如果你正在进行的更改尚未提交，切换分支可能会有冲突，你可能需要先提交更改，或者取消更改，然后再切换分支。
   - `git checkout -b [branch-name]`：创建一个新的分支，并立即切换到这个新分支。这是 `git branch [branch-name]` 和 `git checkout [branch-name]` 的快捷方式。
   - `git checkout [commit] [file]`：恢复一个文件到指定的提交版本，其中 `[commit]` 是你想要切换到的提交 ID，`[file]` 是你想要恢复的文件。
-  
 - **stash**
-  
+
   - 主要用于代码没开放成功，但是又需要去新的分支开发其他东西，可以将当前的代码存到节点下为一个节点
-    - `git stash `存`git stash list`展示`git stash apply [node] `应用`git stash pop`应用删除`git stash clear`清除全部
-  
+    - `git stash`存`git stash list`展示`git stash apply [node]`应用`git stash pop`应用删除`git stash clear`清除全部
 
 还有变基`rebase`,`cherry pick`可以改变顺序，变线性
 
 `git lint`对代码风格格式校验
 
 新手先注册github,本地安装git工具，配置邮箱等信息，在本地终端或者vscode等试试，再试试push到远程仓库上。
-
-
 
 ## 提交规范
 

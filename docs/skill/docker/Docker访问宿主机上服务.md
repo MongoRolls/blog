@@ -3,7 +3,7 @@ id: docker-accesses-host-service
 slug: /docker-accesses-host-service
 title: Docker访问宿主机上服务
 date: 2022-05-25
-authors: kuizuo
+authors: Mongorolls
 tags: [docker]
 keywords: [docker]
 ---
@@ -36,8 +36,7 @@ docker 运行容器时使用的[桥接](https://so.csdn.net/so/search?q=桥接&s
 --add-host=host.docker.internal:host-gateway
 ```
 
-而在 container 内，可以直接请求 host.docker.internal:PORT，来获取宿主机上提供的各种服务
-如果使用了 Docker Compose，则应该将下面的句子加入 container 的声明中：
+而在 container 内，可以直接请求 host.docker.internal:PORT，来获取宿主机上提供的各种服务如果使用了 Docker Compose，则应该将下面的句子加入 container 的声明中：
 
 ```yaml
 extra_hosts:

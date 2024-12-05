@@ -14,6 +14,7 @@ export default function Tag({
   return (
     <Link
       href={permalink}
+      // className={clsx(styles.tag, count ? styles.tagWithCount : styles.tagRegular, className)}
       className={clsx(styles.tag, count ? styles.tagWithCount : styles.tagRegular, className)}
     >
       {label}

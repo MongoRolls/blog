@@ -20,7 +20,9 @@
   gap: 4px;
 
   a {
-    color: var(--ifm-secondary-text-color);
+    // color: var(--ifm-secondary-text-color);
+    // 默认为蓝色，不然游客不知道可以点击
+    color: var(--ifm-link-color);
   }
 
   a:hover {

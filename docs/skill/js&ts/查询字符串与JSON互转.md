@@ -3,7 +3,7 @@ id: querystring-and-json-convert
 slug: /querystring-and-json-convert
 title: 查询字符串与JSON互转
 date: 2022-03-15
-authors: kuizuo
+authors: Mongorolls
 tags: [http, javascript]
 keywords: [http, javascript]
 ---
@@ -84,7 +84,10 @@ let json = qs.parse(data)
 
 ```javascript
 function qs2Json(str) {
-  return (str.match(/([^=&]+)(=([^&]*))/g) || []).reduce((a, val) => ((a[val.slice(0, val.indexOf('='))] = val.slice(val.indexOf('=') + 1)), a), {})
+  return (str.match(/([^=&]+)(=([^&]*))/g) || []).reduce(
+    (a, val) => ((a[val.slice(0, val.indexOf('='))] = val.slice(val.indexOf('=') + 1)), a),
+    {},
+  )
 }
 ```
 
@@ -93,7 +96,7 @@ js 对象转查询字符串就相对简单许多了，只需要对 js 对象遍�
 ```javascript
 function json2Qs(obj) {
   return Object.keys(obj)
-    .map((key) => {
+    .map(key => {
       return key + '=' + obj[key]
     })
     .join('&')
@@ -164,12 +167,19 @@ Cookie: _uuid=E4842E42-D3DC-2425-C598-231821AB344B39943infoc; buvid3=C844F66D-EC
 
 ```javascript
 function cookies2Obj(cookies) {
-  return cookies.split('; ').reduce((a, val) => ((a[val.slice(0, val.indexOf('=')).trim()] = val.slice(val.indexOf('=') + 1).trim()), a), {})
+  return cookies
+    .split('; ')
+    .reduce(
+      (a, val) => (
+        (a[val.slice(0, val.indexOf('=')).trim()] = val.slice(val.indexOf('=') + 1).trim()), a
+      ),
+      {},
+    )
 }
 
 function obj2Cookies(obj) {
   return Object.keys(obj)
-    .map((key) => {
+    .map(key => {
       return key + '=' + obj[key]
     })
     .join('; ')

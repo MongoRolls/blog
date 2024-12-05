@@ -3,7 +3,7 @@ id: js-array-object-unique
 slug: /js-array-object-unique
 title: JS数组对象去重
 date: 2021-07-05
-authors: kuizuo
+authors: Mongorolls
 tags: [javascript]
 keywords: [javascript]
 ---
@@ -15,7 +15,7 @@ keywords: [javascript]
 数据如下:
 
 ```js
-[{ name: 'zs', age: 15 }, { name: 'lisi' }, { name: 'zs' }]
+;[{ name: 'zs', age: 15 }, { name: 'lisi' }, { name: 'zs' }]
 ```
 
 想要将 name 为 zs 的数据去重，优先保留第一条相同数据
@@ -29,7 +29,9 @@ let hash = {}
 
 function unique(arr, initialValue) {
   return arr.reduce(function (previousValue, currentValue, index, array) {
-    hash[currentValue.name] ? '' : (hash[currentValue.name] = true && previousValue.push(currentValue))
+    hash[currentValue.name]
+      ? ''
+      : (hash[currentValue.name] = true && previousValue.push(currentValue))
 
     return previousValue
   }, initialValue)

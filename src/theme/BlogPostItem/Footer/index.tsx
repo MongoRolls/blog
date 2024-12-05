@@ -61,7 +61,7 @@ export default function BlogPostItemFooter(): JSX.Element | null {
             <>
               <Icon icon="ri:time-line" />
               <span className={clsx(styles.blogPostReadTime, 'blog__readingTime')}>
-                <ReadingTime readingTime={readingTime} />
+                <ReadingTime readingTime={readingTime * 2} />
               </span>
             </>
           )}

@@ -1,3 +1,4 @@
+/* eslint-disable @docusaurus/prefer-docusaurus-heading */
 import clsx from 'clsx'
 import React from 'react'
 import { HtmlClassNameProvider, PageMetadata, ThemeClassNames } from '@docusaurus/theme-common'
@@ -65,9 +66,9 @@ function BlogListPageContent(props: Props) {
   return (
     <MyLayout>
       <h2 className={styles.blogTitle}>
-        <Translate id="theme.blog.title.new">博客</Translate>
+        <Translate id="theme.blog.title.new">Blog Space</Translate>
       </h2>
-      <p className={styles.blogDescription}>代码人生：编织技术与生活的博客之旅</p>
+      <p className={styles.blogDescription}>The Algorithm of Life: Blogged and Shared</p>
       <ViewTypeSwitch viewType={viewType} toggleViewType={toggleViewType} />
       <div className="row">
         <div className={'col col--12'}>

@@ -3,7 +3,7 @@ id: vue-reactive-data-basic-type
 slug: /vue-reactive-data-basic-type
 title: Vue响应式数据之基本数据类型
 date: 2022-05-18
-authors: kuizuo
+authors: Mongorolls
 tags: [vue, javascript]
 keywords: [vue, javascript]
 ---
@@ -194,9 +194,7 @@ function reactive(target) {
     set(target, key, newVal, receiver) {
       const oldVal = target[key]
 
-      const type = Object.prototype.hasOwnProperty.call(target, key)
-        ? 'SET'
-        : 'ADD'
+      const type = Object.prototype.hasOwnProperty.call(target, key) ? 'SET' : 'ADD'
       const res = Reflect.set(target, key, newVal, receiver)
 
       if (oldVal !== newVal) {

@@ -27,10 +27,7 @@ export default function BlogPostItems({
   return (
     <>
       {items.map(({ content: BlogPostContent }, i) => (
-        <BlogPostProvider
-          key={BlogPostContent.metadata.permalink}
-          content={BlogPostContent}
-        >
+        <BlogPostProvider key={BlogPostContent.metadata.permalink} content={BlogPostContent}>
           <motion.div
             initial="from"
             animate="to"

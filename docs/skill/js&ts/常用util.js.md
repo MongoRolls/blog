@@ -3,7 +3,7 @@ id: commonly-used-util.js
 slug: /commonly-used-util.js
 title: 常用util.js
 date: 2020-10-21
-authors: kuizuo
+authors: Mongorolls
 tags: [js, util]
 keywords: [js, util]
 ---
@@ -90,7 +90,18 @@ function formatTime(time, option) {
   if (option) {
     return parseTime(time, option)
   } else {
-    return d.getFullYear() + '年' + (d.getMonth() + 1) + '月' + d.getDate() + '日' + d.getHours() + '时' + d.getMinutes() + '分'
+    return (
+      d.getFullYear() +
+      '年' +
+      (d.getMonth() + 1) +
+      '月' +
+      d.getDate() +
+      '日' +
+      d.getHours() +
+      '时' +
+      d.getMinutes() +
+      '分'
+    )
   }
 }
 ```
@@ -159,7 +170,7 @@ function deepClone(source) {
     throw new Error('error arguments', 'deepClone')
   }
   const targetObj = source.constructor === Array ? [] : {}
-  Object.keys(source).forEach((keys) => {
+  Object.keys(source).forEach(keys => {
     if (source[keys] && typeof source[keys] === 'object') {
       targetObj[keys] = deepClone(source[keys])
     } else {
