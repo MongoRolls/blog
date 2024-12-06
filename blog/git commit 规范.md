@@ -2,11 +2,7 @@
 slug: 'git-tutorial'
 title: 'git commit 规范'
 date: '2024-01-07'
-authors:
-  name: MongoRolls
-  title: 前端 / 25届
-  url: https://github.com/mongorolls
-  image_url: /img/logo.webp
+authors: by
 
 tags: ['知识总结', '学习感悟']
 keywords: ['知识总结', '学习感悟']

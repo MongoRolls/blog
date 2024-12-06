@@ -2,11 +2,7 @@
 slug: 'cursor-ai'
 title: 'Cursor AI 编程助手使用指南'
 date: '2024-011-17'
-authors:
-  name: MongoRolls
-  title: 前端 / 25届
-  url: https://github.com/mongorolls
-  image_url: /img/logo.webp
+authors: mr
 
 tags: ['AI编程', '开发工具']
 image: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/cursor-1.png'

@@ -2,11 +2,7 @@
 slug: 2024-Next
 title: Next.js 笔记
 date: 2024-6-8
-authors:
-  name: 搬运的芒果
-  title: 大自然的搬运工
-  url: https://github.com/mongoRolls
-  image_url: /img/logo.webp
+authors: mr
 
 tags: [Next.js]
 keywords: [Next.js]

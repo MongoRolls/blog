@@ -2,11 +2,7 @@
 slug: bulid-a-blog
 title: 如何搭建一个docusaurus博客
 date: 2024-2-22
-authors:   
-  name: 搬运的芒果
-  title: 大自然的搬运工
-  url: https://github.com/mongoRolls
-  image_url: /img/logo.webp
+authors: by
 
 tags: [技术分享, docusaurus]
 keywords: [技术分享, docusaurus]
