@@ -11,6 +11,8 @@ description: 叙述如何搭建一个博客
 
 分享如何简单快速制作一个个人博客
 
+分享主题是docusaurus。无其他blog框架如vitepress等
+
 <!-- truncate -->
 
 ### docusaurus介绍

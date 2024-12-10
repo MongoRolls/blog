@@ -1,5 +1,5 @@
 import React from 'react'
-import { Variants, motion, useMotionValue } from 'framer-motion'
+import { Variants, motion } from 'framer-motion'
 import Link from '@docusaurus/Link'
 import type { Props as BlogPostItemsProps } from '@theme/BlogPostItems'
 import Tag from '@theme/Tag'
@@ -29,7 +29,7 @@ const item = {
 export default function BlogPostGridItems({ items }: BlogPostItemsProps): JSX.Element {
   return (
     <motion.div className={styles.blogGrid} variants={container} initial="hidden" animate="visible">
-      {items.map(({ content: BlogPostContent }, i) => {
+      {items.map(({ content: BlogPostContent }) => {
         const { metadata: blogMetaData, frontMatter } = BlogPostContent
         const { title } = frontMatter
         const { permalink, date, tags } = blogMetaData
@@ -43,9 +43,9 @@ export default function BlogPostGridItems({ items }: BlogPostItemsProps): JSX.El
             className={styles.postGridItem}
             key={blogMetaData.permalink}
             variants={item}
-            onMouseMove={e => {
-              e.currentTarget.style.setProperty('--mouse-x', `${e.clientX}px`)
-              e.currentTarget.style.setProperty('--mouse-y', `${e.clientY}px`)
+            whileHover={{
+              scale: 1.02,
+              transition: { duration: 0.2 },
             }}
           >
             <Link to={permalink} className={styles.itemTitle}>
@@ -57,48 +57,20 @@ export default function BlogPostGridItems({ items }: BlogPostItemsProps): JSX.El
                   <svg width="1em" height="1em" viewBox="0 0 24 24">
                     <path
                       fill="currentColor"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M10 15h4V9h-4v6Zm0 2v3a1 1 0 0 1-2 0v-3H5a1 1 0 0 1 0-2h3V9H5a1 1 0 1 1 0-2h3V4a1 1 0 1 1 2 0v3h4V4a1 1 0 0 1 2 0v3h3a1 1 0 0 1 0 2h-3v6h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3h-4Z"
                     ></path>
                   </svg>
-                  {tags.slice(0, 2).map(({ label, permalink: tagPermalink }, index) => {
-                    return (
-                      <>
-                        {index !== 0 && '/'}
-                        <Tag
-                          label={label}
-                          permalink={tagPermalink}
-                          key={tagPermalink}
-                          className={'tag'}
-                        />
-                      </>
-                    )
-                  })}
+                  {tags.slice(0, 2).map(({ label, permalink: tagPermalink }, index) => (
+                    <React.Fragment key={tagPermalink}>
+                      {index !== 0 && '/'}
+                      <Tag label={label} permalink={tagPermalink} className={'tag'} />
+                    </React.Fragment>
+                  ))}
                 </>
               )}
             </div>
             <div className={styles.itemDate}>{dateString}</div>
-            <motion.div
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                background: 'rgba(0, 0, 0, 0.5)', // Adjust the opacity as needed
-              }}
-            />
-            <div
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                clipPath: 'circle(100px at var(--mouse-x) var(--mouse-y))',
-                // Ensure that the variables are set as CSS variables
-              }}
-            />
           </motion.div>
         )
       })}

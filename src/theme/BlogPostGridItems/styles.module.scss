@@ -8,81 +8,54 @@
 
 .postGridItem {
   position: relative;
-  min-width: 24rem;
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  grid-template-areas:
-    'title title'
-    'tags date';
-  gap: 1em 2em;
-  align-items: center;
-  padding: 1em 1.2em;
-  background: var(--blog-item-background-color);
-  border-radius: 6px;
-  transition: all 0.3s;
-
-  --x: 0;
-  --y: 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 
   &:hover {
-    box-sizing: border-box;
-    box-shadow: var(--blog-item-shadow);
-    background: var(--blog-item-shade);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: var(--card-background-hover);
+  }
+}
+
+.itemTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+  margin-bottom: 0.8rem;
+  display: block;
+
+  &:hover {
+    color: var(--ifm-color-primary);
+    text-decoration: none;
+  }
+}
+
+.itemTags {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+
+  svg {
+    color: var(--ifm-color-primary);
   }
 
-  .itemTitle {
-    color: inherit;
-    font-size: 1em;
-    text-decoration: none;
-    transition: 0.5s;
-    grid-area: title;
+  .tag {
+    font-size: 0.9rem;
+    color: var(--ifm-color-primary);
 
     &:hover {
-      color: var(--ifm-color-primary);
+      text-decoration: underline;
     }
   }
+}
 
-  .itemStick {
-    grid-area: stick;
-    justify-self: end;
-    color: #6ebdff;
-    position: absolute;
-    top: -6px;
-    left: 0;
-    display: inline-block;
-    font-size: 1.5rem;
-
-    &::before {
-      content: '\e62b';
-    }
-  }
-
-  .itemTags {
-    grid-area: tags;
-    /* overflow-x: auto; */
-
-    display: inline-flex;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 0.9em;
-
-    a {
-      padding: 1px 2px;
-      border: 0 !important;
-      color: inherit;
-
-      &:hover {
-        color: var(--ifm-color-primary);
-      }
-    }
-  }
-
-  .itemDate {
-    font-size: 0.8rem;
-    grid-area: date;
-    justify-self: end;
-    color: var(--ifm-color-emphasis-600);
-  }
+.itemDate {
+  font-size: 0.9rem;
+  color: var(--ifm-color-gray-600);
 }
 
 .spotlight {
