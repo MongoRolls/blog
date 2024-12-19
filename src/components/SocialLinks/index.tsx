@@ -3,6 +3,7 @@ import { useThemeConfig } from '@docusaurus/theme-common'
 import { ThemeConfig } from '@docusaurus/preset-classic'
 import { Icon } from '@iconify/react'
 import JuejinIcon from '@site/static/svg/juejin.svg'
+import Link from '@docusaurus/Link'
 
 import styles from './styles.module.scss'
 
@@ -29,9 +30,9 @@ function SocialLink({
   icon: string | React.JSX.Element
 }) {
   return (
-    <a href={href} target="_blank" {...prop} title={title}>
+    <Link href={href} target="_blank" {...prop} title={title}>
       {typeof icon === 'string' ? <Icon icon={icon} /> : icon}
-    </a>
+    </Link>
   )
 }
 

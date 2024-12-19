@@ -10,6 +10,7 @@ export default function Tag({
   label,
   count,
   className,
+  ...props
 }: Props & { className?: string }): JSX.Element {
   return (
     <Link

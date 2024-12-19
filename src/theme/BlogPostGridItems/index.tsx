@@ -64,7 +64,7 @@ export default function BlogPostGridItems({ items }: BlogPostItemsProps): JSX.El
                   {tags.slice(0, 2).map(({ label, permalink: tagPermalink }, index) => (
                     <React.Fragment key={tagPermalink}>
                       {index !== 0 && '/'}
-                      <Tag label={label} permalink={tagPermalink} className={'tag'} />
+                      <Tag label={label} permalink={tagPermalink} description="" />
                     </React.Fragment>
                   ))}
                 </>

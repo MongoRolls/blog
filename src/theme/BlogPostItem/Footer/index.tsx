@@ -7,13 +7,13 @@ import Tag from '@theme/Tag'
 import ReadMoreLink from '@theme/BlogPostItem/Footer/ReadMoreLink'
 import { Icon } from '@iconify/react'
 import { ReadingTime } from '../Header/Info/index'
+import dayjs from 'dayjs'
 
 import styles from './styles.module.scss'
 
 export default function BlogPostItemFooter(): JSX.Element | null {
   const { metadata, isBlogPostPage } = useBlogPost()
-  const { tags, title, editUrl, hasTruncateMarker, date, formattedDate, readingTime, authors } =
-    metadata;
+  const { tags, title, editUrl, hasTruncateMarker, date, readingTime, authors } = metadata
 
   // A post is truncated if it's in the "list view" and it has a truncate marker
   const truncatedPost = !isBlogPostPage && hasTruncateMarker
@@ -43,7 +43,7 @@ export default function BlogPostItemFooter(): JSX.Element | null {
             <>
               <Icon icon="ri:calendar-line" />
               <time dateTime={date} className={styles.blogPostDate} itemProp="datePublished">
-                {formattedDate}
+                {dayjs(date).format('YYYY-MM-DD')}
               </time>
             </>
           )}
@@ -52,7 +52,7 @@ export default function BlogPostItemFooter(): JSX.Element | null {
               <Icon icon="ri:price-tag-3-line" />
               <span className={styles.blogPostInfoTags}>
                 {tags.map(({ label, permalink: tagPermalink }) => (
-                  <Tag label={label} permalink={tagPermalink} key={tagPermalink} />
+                  <Tag label={label} permalink={tagPermalink} key={tagPermalink} description="" />
                 ))}
               </span>
             </>
