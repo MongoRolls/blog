@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import { Variants, motion } from 'framer-motion'
 import Link from '@docusaurus/Link'
 import type { Props as BlogPostItemsProps } from '@theme/BlogPostItems'

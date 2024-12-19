@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import { useThemeConfig, useColorMode } from '@docusaurus/theme-common'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { ThemeConfig } from '@docusaurus/preset-classic'
@@ -18,7 +18,7 @@ const defaultConfig: Partial<GiscusProps> & { darkTheme: string } = {
   darkTheme: 'dark_dimmed',
 }
 
-export default function Comment(): JSX.Element {
+export default function Comment(): React.JSX.Element {
   const themeConfig = useThemeConfig() as ThemeConfig & { giscus: GiscusConfig }
   const { i18n } = useDocusaurusContext()
 

@@ -1,11 +1,7 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import clsx from 'clsx'
 import Link from '@docusaurus/Link'
-import {
-  PageMetadata,
-  HtmlClassNameProvider,
-  ThemeClassNames,
-} from '@docusaurus/theme-common'
+import { PageMetadata, HtmlClassNameProvider, ThemeClassNames } from '@docusaurus/theme-common'
 import Layout from '@theme/Layout'
 import ResourceCard from './_components/ResourceCard'
 import BackToTopButton from '@theme/BackToTopButton'
@@ -20,9 +16,7 @@ function CategorySidebar() {
 
   return (
     <nav className={clsx(styles.sidebar, 'thin-scrollbar')}>
-      <div className={clsx(styles.sidebarItemTitle, 'margin-bottom--md')}>
-        {sidebar.title}
-      </div>
+      <div className={clsx(styles.sidebarItemTitle, 'margin-bottom--md')}>{sidebar.title}</div>
       <ul className={clsx(styles.sidebarItemList, 'clean-list')}>
         {sidebar.items.map(item => (
           <li key={item.permalink} className={styles.sidebarItem}>
@@ -49,11 +43,7 @@ function CategoryList() {
           <div className={styles.cateHeader}>
             <h2 id={cate.name} className="anchor">
               {cate.name}
-              <a
-                className="hash-link"
-                href={`#${cate.name}`}
-                title={cate.name}
-              ></a>
+              <a className="hash-link" href={`#${cate.name}`} title={cate.name}></a>
             </h2>
           </div>
           <section>
@@ -75,10 +65,7 @@ export default function Resources() {
 
   return (
     <HtmlClassNameProvider
-      className={clsx(
-        ThemeClassNames.wrapper.blogPages,
-        ThemeClassNames.page.blogTagsListPage,
-      )}
+      className={clsx(ThemeClassNames.wrapper.blogPages, ThemeClassNames.page.blogTagsListPage)}
     >
       <PageMetadata title={title} description={description} />
       <Layout>

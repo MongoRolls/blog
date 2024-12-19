@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import { Icon } from '@iconify/react'
 import Link from '@docusaurus/Link'
 import Translate from '@docusaurus/Translate'

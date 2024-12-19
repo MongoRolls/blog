@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import Link from '@docusaurus/Link'
 import { NavbarSecondaryMenuFiller } from '@docusaurus/theme-common'
 import type { Props } from '@theme/BlogSidebar/Mobile'
@@ -23,10 +23,5 @@ function BlogSidebarMobileSecondaryMenu({ sidebar }: Props): JSX.Element {
 }
 
 export default function BlogSidebarMobile(props: Props): JSX.Element {
-  return (
-    <NavbarSecondaryMenuFiller
-      component={BlogSidebarMobileSecondaryMenu}
-      props={props}
-    />
-  )
+  return <NavbarSecondaryMenuFiller component={BlogSidebarMobileSecondaryMenu} props={props} />
 }

@@ -1,6 +1,6 @@
 /* eslint-disable @docusaurus/prefer-docusaurus-heading */
 import clsx from 'clsx'
-import React from 'react'
+import React, { JSX } from 'react'
 import { HtmlClassNameProvider, PageMetadata, ThemeClassNames } from '@docusaurus/theme-common'
 import BackToTopButton from '@theme/BackToTopButton'
 import type { Props } from '@theme/BlogListPage'

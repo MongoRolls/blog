@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import Layout from '@theme/Layout'
 import HomepageHero from './_components/HomepageHero'
 import HomepageBlog from './_components/HomepageBlog'

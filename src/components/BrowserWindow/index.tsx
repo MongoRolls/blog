@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React, { JSX } from 'react'
 import styles from './styles.module.css'
 
 function BrowserWindow({ children, minHeight, url }) {

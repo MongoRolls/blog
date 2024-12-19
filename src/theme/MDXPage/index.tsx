@@ -1,10 +1,6 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import clsx from 'clsx'
-import {
-  PageMetadata,
-  HtmlClassNameProvider,
-  ThemeClassNames,
-} from '@docusaurus/theme-common'
+import { PageMetadata, HtmlClassNameProvider, ThemeClassNames } from '@docusaurus/theme-common'
 import Layout from '@theme/Layout'
 import MDXContent from '@theme/MDXContent'
 import TOC from '@theme/TOC'
@@ -17,8 +13,7 @@ export default function MDXPage(props: Props): JSX.Element {
   const {
     metadata: { title, description, frontMatter },
   } = MDXPageContent
-  const { wrapperClassName, hide_table_of_contents: hideTableOfContents } =
-    frontMatter
+  const { wrapperClassName, hide_table_of_contents: hideTableOfContents } = frontMatter
 
   return (
     <HtmlClassNameProvider

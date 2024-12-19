@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import { motion, Variants } from 'framer-motion'
 import { BlogPostProvider } from '@docusaurus/theme-common/internal'
 import BlogPostItem from '@theme/BlogPostItem'

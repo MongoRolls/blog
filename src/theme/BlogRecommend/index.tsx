@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 import { BlogPost } from '@docusaurus/plugin-content-blog'

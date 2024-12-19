@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import { useThemeConfig } from '@docusaurus/theme-common'
 import { ThemeConfig } from '@docusaurus/preset-classic'
 import { Icon } from '@iconify/react'
@@ -26,7 +26,7 @@ function SocialLink({
 }: {
   href: string
   title: string
-  icon: string | JSX.Element
+  icon: string | React.JSX.Element
 }) {
   return (
     <a href={href} target="_blank" {...prop} title={title}>

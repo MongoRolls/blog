@@ -19,8 +19,7 @@ keywords: [react, hook]
 #### 基本数据类型
 
 ```tsx
-import React from 'react'
-
+import React, { JSX } from 'react'
 export function App(props) {
   const [count, setCount] = React.useState(0)
 
@@ -331,7 +330,7 @@ export default function Counter() {
 }
 ```
 
-通过`useReducer `与`useContext` 就能做到代替[redux](https://cn.redux.js.org/) 来进行状态管理了。篇幅有限，这里占不做演示。
+通过`useReducer`与`useContext` 就能做到代替[redux](https://cn.redux.js.org/) 来进行状态管理了。篇幅有限，这里占不做演示。
 
 ### useId
 

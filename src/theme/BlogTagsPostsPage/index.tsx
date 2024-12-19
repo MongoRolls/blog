@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import clsx from 'clsx'
 import Translate, { translate } from '@docusaurus/Translate'
 import {
@@ -59,12 +59,7 @@ function BlogTagsPostsPageMetadata({ tag }: Props): JSX.Element {
   )
 }
 
-function BlogTagsPostsPageContent({
-  tag,
-  items,
-  sidebar,
-  listMetadata,
-}: Props): JSX.Element {
+function BlogTagsPostsPageContent({ tag, items, sidebar, listMetadata }: Props): JSX.Element {
   const title = useBlogTagsPostsPageTitle(tag)
   return (
     <MyLayout>
@@ -89,10 +84,7 @@ function BlogTagsPostsPageContent({
 export default function BlogTagsPostsPage(props: Props): JSX.Element {
   return (
     <HtmlClassNameProvider
-      className={clsx(
-        ThemeClassNames.wrapper.blogPages,
-        ThemeClassNames.page.blogTagPostListPage,
-      )}
+      className={clsx(ThemeClassNames.wrapper.blogPages, ThemeClassNames.page.blogTagPostListPage)}
     >
       <BlogTagsPostsPageMetadata {...props} />
       <BlogTagsPostsPageContent {...props} />

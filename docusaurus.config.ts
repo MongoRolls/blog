@@ -55,6 +55,13 @@ const config: Config = {
           to: 'blog',
         },
         {
+          label: '归档',
+          position: 'right',
+
+          to: 'blog/archive',
+        },
+
+        {
           label: '项目',
           position: 'right',
           to: 'project',
@@ -63,7 +70,6 @@ const config: Config = {
           label: '更多',
           position: 'right',
           items: [
-            { label: '归档', to: 'blog/archive' },
             { label: '笔记', to: 'docs/skill' },
             { label: '资源', to: 'resource' },
             { label: '友链', to: 'friends' },
@@ -116,11 +122,11 @@ const config: Config = {
           ],
         },
       ],
+      //  <p style="margin-bottom: 0;"><a href="http://beian.miit.gov.cn/">${beian}</a></p>
+      //   <p style="display: inline-flex; align-items: center;"><img style="height:20px;margin-right: 0.5rem;" src="/img/police.png" alt="police" height="20"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${
+      //     beian1.match(/\d+/)?.[0]
+      //   }" >${beian1}</a></p>
       copyright: `
-        <p style="margin-bottom: 0;"><a href="http://beian.miit.gov.cn/">${beian}</a></p>
-        <p style="display: inline-flex; align-items: center;"><img style="height:20px;margin-right: 0.5rem;" src="/img/police.png" alt="police" height="20"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${
-          beian1.match(/\d+/)?.[0]
-        }" >${beian1}</a></p>
         <p>Copyright © 2020 - PRESENT MongoRolls Built with Docusaurus.</p>
         `,
     },
@@ -228,7 +234,7 @@ const config: Config = {
         postsPerPage: 10,
         showReadingTime: true,
         readingTime: ({ content, frontMatter, defaultReadingTime }) =>
-          defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
+          defaultReadingTime({ content, options: { wordsPerMinute:150 } }),
         feedOptions: {
           type: 'all',
           title: 'MongoRolls',

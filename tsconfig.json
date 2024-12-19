@@ -1,6 +1,7 @@
 {
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
+    "jsx": "react-jsx",
     "lib": ["DOM", "ESNext"],
     "baseUrl": ".",
     "resolveJsonModule": true,
@@ -24,7 +25,7 @@
     "noUnusedParameters": false,
     "importsNotUsedAsValues": "remove",
     "moduleResolution": "Bundler",
-    "skipLibCheck": false,
+    "skipLibCheck": false
     // "types": ["jest"]
   },
   "exclude": ["src/sw.js"]

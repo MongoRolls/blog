@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import { useWindowSize } from '@docusaurus/theme-common'
 import BlogSidebarDesktop from '@theme/BlogSidebar/Desktop'
 import BlogSidebarMobile from '@theme/BlogSidebar/Mobile'

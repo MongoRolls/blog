@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import clsx from 'clsx'
 import Link, { type Props as LinkProps } from '@docusaurus/Link'
 
@@ -11,10 +11,7 @@ function MaybeLink(props: LinkProps): JSX.Element {
   return <>{props.children}</>
 }
 
-export default function BlogPostItemHeaderAuthor({
-  author,
-  className,
-}: Props): JSX.Element {
+export default function BlogPostItemHeaderAuthor({ author, className }: Props): JSX.Element {
   const { name, title, url, imageURL, email } = author
   const link = url || (email && `mailto:${email}`) || undefined
   return (

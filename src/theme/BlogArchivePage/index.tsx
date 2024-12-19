@@ -1,12 +1,8 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import Link from '@docusaurus/Link'
 import Translate, { translate } from '@docusaurus/Translate'
 import clsx from 'clsx'
-import {
-  PageMetadata,
-  HtmlClassNameProvider,
-  ThemeClassNames,
-} from '@docusaurus/theme-common'
+import { PageMetadata, HtmlClassNameProvider, ThemeClassNames } from '@docusaurus/theme-common'
 import type { ArchiveBlogPost, Props } from '@theme/BlogArchivePage'
 import { Icon } from '@iconify/react'
 import styles from './styles.module.css'
@@ -68,13 +64,7 @@ function YearsSection({ years }: { years: YearProp[] }) {
   return (
     <div className="margin-top--md margin-left--sm">
       {years.map((_props, idx) => (
-        <motion.div
-          key={idx}
-          initial="from"
-          animate="to"
-          custom={idx}
-          variants={variants}
-        >
+        <motion.div key={idx} initial="from" animate="to" custom={idx} variants={variants}>
           <div className={styles.archiveYear}>
             <h3 className={styles.archiveYearTitle}>{_props.year}</h3>
             <span>
@@ -117,10 +107,7 @@ export default function BlogArchive({ archive }: Props) {
   const years = listPostsByYears(archive.blogPosts)
   return (
     <HtmlClassNameProvider
-      className={clsx(
-        ThemeClassNames.wrapper.blogPages,
-        ThemeClassNames.page.blogTagsListPage,
-      )}
+      className={clsx(ThemeClassNames.wrapper.blogPages, ThemeClassNames.page.blogTagsListPage)}
     >
       <PageMetadata title={title} description={description} />
       <MyLayout>

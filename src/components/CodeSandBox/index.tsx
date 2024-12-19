@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import { useColorMode } from '@docusaurus/theme-common'
 
 function index({ slug, title, height = '600px' }) {

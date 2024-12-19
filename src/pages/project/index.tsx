@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import _ from 'loadsh'
 import clsx from 'clsx'
 import { translate } from '@docusaurus/Translate'
