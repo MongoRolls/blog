@@ -7,6 +7,8 @@ authors: by
 tags: ['知识总结', '学习感悟']
 keywords: ['知识总结', '学习感悟']
 description: 'git commit 规范'
+state: finished
+
 ---
 
 <!-- truncate -->

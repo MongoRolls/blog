@@ -8,6 +8,8 @@ tags: ['AI编程', '开发工具']
 image: 'https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/cursor-1.png'
 keywords: ['Cursor', 'AI编程', '编程助手']
 description: 'Cursor AI编程助手的使用教程和最佳实践'
+state: finished
+
 ---
 
 本文章包括了本人使用cursor的体验总结  
@@ -30,7 +32,7 @@ Cursor是一款非常好用的AI编程助手。我直接购买了Pro版本，每
 
 composer最新版本，生成的代码命令行，可以直接run code,加到终端执行包括最近更新了agent
 
-<img style={{ width: "80%", align: "center" }} src="<https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/cursor-try.png"/>>
+<img style={{ width: "80%", align: "center" }} src="https://mongorolls-images.oss-cn-shenzhen.aliyuncs.com/img/cursor-try.png"/>
 
 ### 常用快捷键
 
@@ -64,7 +66,7 @@ You are an expert in Solidity, TypeScript, Node.js, Next.js 14 App Router, React
 
 ### cursor 个人使用分享
 
-1. 用markdown给他写消息，会让gpt更容易了解主次
+1. 用markdown给他写消息，通过标题，列表来让gpt更容易了解主次
 2. step by step让他一步一步写顺序
 3. 用白话多次让他写markdown提示词，不断修改，最后的提示词再喂给cursor去生成
 

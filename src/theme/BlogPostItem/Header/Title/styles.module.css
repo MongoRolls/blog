@@ -1,3 +1,9 @@
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .titleLink {
   position: relative;
   font-weight: 500;
@@ -26,4 +32,15 @@
   visibility: hidden;
   transition: all 0.3s linear;
   transform: scaleX(0);
+}
+
+.draftBadge {
+  padding: 2px 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 550;
+  color: #d46b08;
+  background-color: #fff7e6;
+  border: 1.5px solid #ffd591;
+  border-radius: 4px;
 }
