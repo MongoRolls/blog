@@ -11,5 +11,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "stylelint.validate": ["css", "less", "postcss", "scss", "sass"],
-  "cSpell.words": ["acmer"]
+  "cSpell.words": ["acmer", "Juejin"]
 }

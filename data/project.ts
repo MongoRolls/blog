@@ -45,6 +45,7 @@ export const projects: Project[] = [
     tags: ['product', 'design', 'favorite'],
     type: 'commerce',
   },
+
 ]
 
 export type Tag = {

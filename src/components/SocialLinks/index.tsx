@@ -44,7 +44,7 @@ export default function SocialLinks({ ...prop }) {
   return (
     <div className={styles.social__links} {...prop}>
       {socials.github && <SocialLink href={socials.github} title="gitub" icon="ri:github-line" />}
-      {socials.juejin && <SocialLink href={socials.juejin} title="掘金" icon={<JuejinIcon />} />}
+      {socials.juejin && <SocialLink href={socials.juejin} title="掘金" icon={<Icon icon="ri:juejin" />} />}
       {socials.twitter && <SocialLink href={socials.twitter} title="X" icon="ri:twitter-x-line" />}
       {socials.qq && <SocialLink href={socials.qq} title="QQ" icon="ri:qq-line" />}
       {socials.zhihu && <SocialLink href={socials.zhihu} title="知乎" icon="ri:zhihu-line" />}
